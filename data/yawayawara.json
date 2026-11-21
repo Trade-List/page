@@ -1,8 +1,2558 @@
 {
   "title": "やわらの交換リスト",
-  "profile": "ご覧いただきありがとうございます。\n\n▼取引について\n・お声がけはDMまたはリプライでお願いします\n・郵送のみ対応しています（送料はご負担ください）\n・お取り置きは3日までとさせてください\n\n在庫は随時更新しています。",
+  "profile": "ご覧いただきありがとうございます。\n\n▼取引について\n・お声がけはDMまたはリプライでお願いします\n・イベント手渡し、都内手渡し、郵送に対応しています。\n・お支払方法は、現金（手渡しのみ）、PayPay、銀行振込がご利用いただけます。\n\n在庫は随時更新しています。",
   "theme": "pink",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "admins": [],
-  "items": []
+  "items": [
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xjsqwz6",
+      "image": "images/yawayawara/mwqknomg766vr.jpg",
+      "name": "カードフォリオ 並木芽衣子 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "並木芽衣子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xjkgttd",
+      "image": "images/yawayawara/mwqknq1niqvlo.jpg",
+      "name": "カードフォリオ 南条光 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "南条光"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xju6k7v",
+      "image": "images/yawayawara/mwqknr8rirep0.jpg",
+      "name": "カードフォリオ 三好紗南 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "三好紗南"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xjzarum",
+      "image": "images/yawayawara/mwqknrt9x3ofn.jpg",
+      "name": "カードフォリオ 相馬夏美 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "相馬夏美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xj1043q",
+      "image": "images/yawayawara/mwqknsvrnppcp.jpg",
+      "name": "カードフォリオ 吉岡沙紀 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "吉岡沙紀"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xjla3ml",
+      "image": "images/yawayawara/mwqknu6zhlcng.jpg",
+      "name": "カードフォリオ 西川保奈美 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "西川保奈美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xjr2nf2",
+      "image": "images/yawayawara/mwqknvf4gywg2.jpg",
+      "name": "カードフォリオ 松原早耶 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "松原早耶"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xjaupoq",
+      "image": "images/yawayawara/mwqknwiwdgu2b.jpg",
+      "name": "カードフォリオ 安部菜々 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "安部菜々"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xji2g3o",
+      "image": "images/yawayawara/mwqknx5ogexq1.jpg",
+      "name": "カードフォリオ 棟方愛海 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "棟方愛海"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqkn1xj5h4un",
+      "image": "images/yawayawara/mwqknyfc1pgbu.jpg",
+      "name": "カードフォリオ 姫川友紀 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "姫川友紀"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8shz0k49k",
+      "image": "images/yawayawara/mwqknyx8baplp.jpg",
+      "name": "カードフォリオ 向井拓海 MR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "向井拓海",
+        "藤本里奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0q21nf",
+      "image": "images/yawayawara/mwqknzmuobwxo.jpg",
+      "name": "カードフォリオ 小関麗奈 MR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "小関麗奈",
+        "南条光"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0i0f9t",
+      "image": "images/yawayawara/mwqko08ldmgod.jpg",
+      "name": "カードフォリオ 白坂小梅 MR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "白坂小梅",
+        "輿水幸子",
+        "星輝子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0f6u8d",
+      "image": "images/yawayawara/mwqko144a3xpi.jpg",
+      "name": "カードフォリオ 一ノ瀬志希 MR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "一ノ瀬志希"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0v7kmc",
+      "image": "images/yawayawara/mwqko1tm4pysw.jpg",
+      "name": "カードフォリオ 安部菜々 MR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "安部菜々",
+        "矢口美羽"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si00fjo3",
+      "image": "images/yawayawara/mwqko2rmksly7.jpg",
+      "name": "カードフォリオ 桐生つかさ R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "桐生つかさ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si01my9w",
+      "image": "images/yawayawara/mwqko3efllax3.jpg",
+      "name": "カードフォリオ 村上巴 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "村上巴"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0y5oag",
+      "image": "images/yawayawara/mwqko415o5aea.jpg",
+      "name": "カードフォリオ 服部瞳子 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "服部瞳子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si01vyt4",
+      "image": "images/yawayawara/mwqko4l596km7.jpg",
+      "name": "カードフォリオ 松原早耶 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "松原早耶"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0o3iy3",
+      "image": "images/yawayawara/mwqko54xjkd3z.jpg",
+      "name": "カードフォリオ 脇山珠美 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "脇山珠美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0s2sq7",
+      "image": "images/yawayawara/mwqko5ot9egfl.jpg",
+      "name": "カードフォリオ 片桐早苗 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "片桐早苗"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0g3k61",
+      "image": "images/yawayawara/mwqko6k4nzu9f.jpg",
+      "name": "カードフォリオ 三好紗南 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "三好紗南"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si091cys",
+      "image": "images/yawayawara/mwqko744sgnq1.jpg",
+      "name": "カードフォリオ 吉岡沙紀 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "吉岡沙紀"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0c10bg",
+      "image": "images/yawayawara/mwqko7nzhj5yl.jpg",
+      "name": "カードフォリオ 輿水幸子 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "輿水幸子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si053vo9",
+      "image": "images/yawayawara/mwqko8gibt9xk.jpg",
+      "name": "カードフォリオ 的場梨沙 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "的場梨沙"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0fr5nh",
+      "image": "images/yawayawara/mwqko99fx8ced.jpg",
+      "name": "カードフォリオ 藤本里奈 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "藤本里奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0oxusy",
+      "image": "images/yawayawara/mwqko9vly1sw9.jpg",
+      "name": "カードフォリオ 城ヶ崎莉嘉 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "城ヶ崎莉嘉"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0lsw9s",
+      "image": "images/yawayawara/mwqkoal7sorsi.jpg",
+      "name": "カードフォリオ 兵藤レナ R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "兵藤レナ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si04wsi5",
+      "image": "images/yawayawara/mwqkob2ddew58.jpg",
+      "name": "カードフォリオ 小関麗奈 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "小関麗奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0483tw",
+      "image": "images/yawayawara/mwqkobxkyjpkv.jpg",
+      "name": "カードフォリオ 相馬夏美 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "相馬夏美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si09cb6m",
+      "image": "images/yawayawara/mwqkocn8qwi9v.jpg",
+      "name": "カードフォリオ 愛野渚 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "愛野渚"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0thf36",
+      "image": "images/yawayawara/mwqkod488shtl.jpg",
+      "name": "カードフォリオ 新田美波 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "新田美波"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0ptoxz",
+      "image": "images/yawayawara/mwqkodtujx3k0.jpg",
+      "name": "カードフォリオ 安斎都 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "安斎都"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si017ftn",
+      "image": "images/yawayawara/mwqkoedq9tjd5.jpg",
+      "name": "カードフォリオ 並木芽衣子 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "並木芽衣子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si09eako",
+      "image": "images/yawayawara/mwqkofkenm69f.jpg",
+      "name": "カードフォリオ ライラ R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "ライラ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0371i0",
+      "image": "images/yawayawara/mwqkog75g5lys.jpg",
+      "name": "カードフォリオ 白坂小梅 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "白坂小梅"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0qk0co",
+      "image": "images/yawayawara/mwqkogo8y0u6i.jpg",
+      "name": "カードフォリオ 古賀小春 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "古賀小春"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0x8mc6",
+      "image": "images/yawayawara/mwqkohazab6sz.jpg",
+      "name": "カードフォリオ 北条加蓮 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "北条加蓮"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0zcj40",
+      "image": "images/yawayawara/mwqkoi6fq3jgz.jpg",
+      "name": "カードフォリオ ケイト R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "ケイト"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0v0tb9",
+      "image": "images/yawayawara/mwqkoiq6hlwz2.jpg",
+      "name": "カードフォリオ 三村かな子 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "三村かな子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si09ycgj",
+      "image": "images/yawayawara/mwqkoja3fv18b.jpg",
+      "name": "カードフォリオ 白菊ほたる R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "白菊ほたる"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0i5q62",
+      "image": "images/yawayawara/mwqkojx0q0hda.jpg",
+      "name": "カードフォリオ ヘレン R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "ヘレン"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0jhhiw",
+      "image": "images/yawayawara/mwqkokdyo02o8.jpg",
+      "name": "カードフォリオ 仙崎恵磨 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "仙崎恵磨"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0jbz4l",
+      "image": "images/yawayawara/mwqkokxti71sl.jpg",
+      "name": "カードフォリオ 鷺沢文香 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "鷺沢文香"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0f5rv0",
+      "image": "images/yawayawara/mwqkolewxis3l.jpg",
+      "name": "カードフォリオ 南条光 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "南条光"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si080gdz",
+      "image": "images/yawayawara/mwqkolvy36ij5.jpg",
+      "name": "カードフォリオ 桐野アヤ",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "桐野アヤ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si03a7a8",
+      "image": "images/yawayawara/mwqkomog3trfz.jpg",
+      "name": "カードフォリオ 棟方愛海 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "棟方愛海"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0m7n1t",
+      "image": "images/yawayawara/mwqkon5j5mbmy.jpg",
+      "name": "カードフォリオ 村上巴 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "村上巴"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0pwlp2",
+      "image": "images/yawayawara/mwqkonphfjfxt.jpg",
+      "name": "カードフォリオ 三好紗南 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "三好紗南"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0uw3t0",
+      "image": "images/yawayawara/mwqkoo9aagzms.jpg",
+      "name": "カードフォリオ 仙崎恵磨 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "仙崎恵磨"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0g5pdb",
+      "image": "images/yawayawara/mwqkoot7y2guz.jpg",
+      "name": "カードフォリオ 向井拓海 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "向井拓海"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0h5tp3",
+      "image": "images/yawayawara/mwqkopaca6jaw.jpg",
+      "name": "カードフォリオ 城ヶ崎莉嘉 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "城ヶ崎莉嘉"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0y1f2s",
+      "image": "images/yawayawara/mwqkoprc85h1c.jpg",
+      "name": "カードフォリオ 相馬夏美 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "相馬夏美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0jj0xf",
+      "image": "images/yawayawara/mwqkoqjubn548.jpg",
+      "name": "カードフォリオ 浜川愛結奈 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "浜川愛結奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0pnkxf",
+      "image": "images/yawayawara/mwqkor3qc1sy5.jpg",
+      "name": "カードフォリオ 的場梨沙 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "的場梨沙"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si06x4ju",
+      "image": "images/yawayawara/mwqkorkw8hs9f.jpg",
+      "name": "カードフォリオ 星輝子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "星輝子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0gj15z",
+      "image": "images/yawayawara/mwqkos1u5krnv.jpg",
+      "name": "カードフォリオ 西島櫂 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "西島櫂"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0r5w5v",
+      "image": "images/yawayawara/mwqkoslq9d7xv.jpg",
+      "name": "カードフォリオ 小関麗奈 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "小関麗奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si083f5z",
+      "image": "images/yawayawara/mwqkot8kjft86.jpg",
+      "name": "カードフォリオ 片桐早苗 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "片桐早苗"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0nmhf2",
+      "image": "images/yawayawara/mwqkotpkgsh5v.jpg",
+      "name": "カードフォリオ 上田鈴帆 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "上田鈴帆"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0adc7f",
+      "image": "images/yawayawara/mwqkou6m69q6o.jpg",
+      "name": "カードフォリオ 姫川友紀 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "姫川友紀"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si03ye2m",
+      "image": "images/yawayawara/mwqkouw89nc9w.jpg",
+      "name": "カードフォリオ 松山久美子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "松山久美子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0f1c4l",
+      "image": "images/yawayawara/mwqkovg5x3zke.jpg",
+      "name": "カードフォリオ 愛野渚 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "愛野渚"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0rmlvl",
+      "image": "images/yawayawara/mwqkow01n6dp0.jpg",
+      "name": "カードフォリオ 並木芽衣子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "並木芽衣子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0s11m3",
+      "image": "images/yawayawara/mwqkowjyz897f.jpg",
+      "name": "カードフォリオ 矢口美羽 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "矢口美羽"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0rerp2",
+      "image": "images/yawayawara/mwqkox6siw898.jpg",
+      "name": "カードフォリオ 砂塚あきら N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "砂塚あきら"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0ra8a5",
+      "image": "images/yawayawara/mwqkoy20kgwd4.jpg",
+      "name": "カードフォリオ 鷹富士茄子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "鷹富士茄子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0l6plg",
+      "image": "images/yawayawara/mwqkoyroelmcu.jpg",
+      "name": "カードフォリオ 脇山珠美 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "脇山珠美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0tj74u",
+      "image": "images/yawayawara/mwqkoz9pqvj6r.jpg",
+      "name": "カードフォリオ 桐生つかさ N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "桐生つかさ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0vzurh",
+      "image": "images/yawayawara/mwqkozql5h26x.jpg",
+      "name": "カードフォリオ 西川保奈美 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "西川保奈美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0ccr1i",
+      "image": "images/yawayawara/mwqkp09ouwkvb.jpg",
+      "name": "カードフォリオ 二宮飛鳥 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "二宮飛鳥"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0iqj5p",
+      "image": "images/yawayawara/mwqkp0qp1t3ko.jpg",
+      "name": "カードフォリオ 氏家むつみ N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "氏家むつみ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si06dvh0",
+      "image": "images/yawayawara/mwqkp17vb1vhi.jpg",
+      "name": "カードフォリオ ケイト N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "ケイト"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0plqai",
+      "image": "images/yawayawara/mwqkp1rtcbuku.jpg",
+      "name": "カードフォリオ 吉岡沙紀 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "吉岡沙紀"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0jqpm0",
+      "image": "images/yawayawara/mwqkp2hc2ni84.jpg",
+      "name": "カードフォリオ 北条加蓮 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "北条加蓮"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0v2hjy",
+      "image": "images/yawayawara/mwqkp2ydzain3.jpg",
+      "name": "カードフォリオ 白坂小梅 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "白坂小梅"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0ialpp",
+      "image": "images/yawayawara/mwqkp3fgbt7ae.jpg",
+      "name": "カードフォリオ 瀬名詩織 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "瀬名詩織"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0iq506",
+      "image": "images/yawayawara/mwqkp3zcusn5g.jpg",
+      "name": "カードフォリオ 小室千奈美 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "小室千奈美"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0y658o",
+      "image": "images/yawayawara/mwqkp4gl490rs.jpg",
+      "name": "カードフォリオ ヘレン N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "ヘレン"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0so7m8",
+      "image": "images/yawayawara/mwqkp50b3yezn.jpg",
+      "name": "カードフォリオ 新田美波 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "新田美波"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si09ycwb",
+      "image": "images/yawayawara/mwqkp5k8cxpgt.jpg",
+      "name": "カードフォリオ ライラ N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "ライラ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0bv2mv",
+      "image": "images/yawayawara/mwqkp645gf73g.jpg",
+      "name": "カードフォリオ 服部瞳子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "服部瞳子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0jmbo8",
+      "image": "images/yawayawara/mwqkp6wc0t75r.jpg",
+      "name": "カードフォリオ 鷺沢文香 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "鷺沢文香"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-22",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si07sfqp",
+      "image": "images/yawayawara/mwqkp7jd6eq9i.jpg",
+      "name": "カードフォリオ 神谷奈緒 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "神谷奈緒"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0lwgy0",
+      "image": "images/yawayawara/mwqkp891qe5gt.jpg",
+      "name": "カードフォリオ 桐野アヤ N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "桐野アヤ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0dpmn0",
+      "image": "images/yawayawara/mwqkp8q7butkr.jpg",
+      "name": "カードフォリオ 古賀小春 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "古賀小春"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si03ao7q",
+      "image": "images/yawayawara/mwqkp9igeerff.jpg",
+      "name": "カードフォリオ 辻野あかり N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "辻野あかり"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0ijox0",
+      "image": "images/yawayawara/mwqkpa2f12evt.jpg",
+      "name": "カードフォリオ 工藤忍 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "工藤忍"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si00z4dn",
+      "image": "images/yawayawara/mwqkpary12dcu.jpg",
+      "name": "カードフォリオ 白菊ほたる N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "白菊ほたる"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0dmdxk",
+      "image": "images/yawayawara/mwqkpbbuqaznm.jpg",
+      "name": "カードフォリオ 安部菜々 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "安部菜々"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si02hyiz",
+      "image": "images/yawayawara/mwqkpc1hiw3f8.jpg",
+      "name": "カードフォリオ 安斎都 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "安斎都"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0raniq",
+      "image": "images/yawayawara/mwqkpcljv4b6w.jpg",
+      "name": "カードフォリオ 道明寺歌鈴 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "道明寺歌鈴"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si065q5e",
+      "image": "images/yawayawara/mwqkpd5arlguh.jpg",
+      "name": "カードフォリオ 輿水幸子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "輿水幸子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si089w9p",
+      "image": "images/yawayawara/mwqkpdp7gcm7n.jpg",
+      "name": "カードフォリオ 兵藤レナ N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "兵藤レナ"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0joa6i",
+      "image": "images/yawayawara/mwqkpec051iel.jpg",
+      "name": "カードフォリオ 井村雪菜 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "井村雪菜"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0u5hnl",
+      "image": "images/yawayawara/mwqkpevwd4jw4.jpg",
+      "name": "カードフォリオ 桃井あずき N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "桃井あずき"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0cnxxw",
+      "image": "images/yawayawara/mwqkpfock32rl.jpg",
+      "name": "カードフォリオ 松原早耶 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "松原早耶"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0zl5d4",
+      "image": "images/yawayawara/mwqkpg8al6jqa.jpg",
+      "name": "カードフォリオ 棟方愛海 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "棟方愛海"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0e5yzc",
+      "image": "images/yawayawara/mwqkpgpcqd7hh.jpg",
+      "name": "カードフォリオ 一ノ瀬志希 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "一ノ瀬志希"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0l0qe0",
+      "image": "images/yawayawara/mwqkphc2dv9ws.jpg",
+      "name": "カードフォリオ 太田優 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "太田優"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0h7r06",
+      "image": "images/yawayawara/mwqkpht5m7mzq.jpg",
+      "name": "カードフォリオ 藤本里奈 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "藤本里奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 2,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0mlk7p",
+      "image": "images/yawayawara/mwqkpifw4kwg4.jpg",
+      "name": "カードフォリオ 江上椿 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "江上椿"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0l3txx",
+      "image": "images/yawayawara/mwqkpizs1kkvi.jpg",
+      "name": "カードフォリオ 奥山沙織 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "奥山沙織"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0931pd",
+      "image": "images/yawayawara/mwqkpjiodgkfh.jpg",
+      "name": "カードフォリオ 三村かな子 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "三村かな子"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 3,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0cqmm1",
+      "image": "images/yawayawara/mwqkpk9chk3z8.jpg",
+      "name": "カードフォリオ 今井加奈 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "今井加奈"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    },
+    {
+      "type": "give",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwqk8si0sxjhn",
+      "image": "images/yawayawara/mwqkpkt895k6x.jpg",
+      "name": "カードフォリオ 福山舞 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "福山舞"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "",
+      "note": ""
+    }
+  ]
 }
