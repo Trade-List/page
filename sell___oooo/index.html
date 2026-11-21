@@ -254,9 +254,13 @@ footer button{border:0;background:none;color:var(--muted);opacity:.55;font-size:
 <script>
 /* =========================================================
    設定
-   - アカウントは data/<アカウント名>.json を置くだけで増やせます
-   - URL: index.html?a=<アカウント名>
+   - このファイルは「<アカウント名>/index.html」に置きます
+   - アカウントを増やすときは、フォルダごとコピーして
+     下の ACCOUNT を書き換え、data/<アカウント名>.json を用意します
    ========================================================= */
+const ACCOUNT = 'sell___oooo';   // ← このページのアカウント名
+const BASE = '../';             // data/ と images/ の場所
+
 const CONFIG = (() => {
   // GitHub Pages(https://<owner>.github.io/<repo>/) なら URL から自動判定
   let owner = 'Trade-List', repo = 'page';
@@ -338,7 +342,7 @@ function imgSrc(p) {
   if (!p) return '';
   if (p.startsWith('pending:')) return S.pending.get(p) || '';
   if (S.imgCache.has(p)) return S.imgCache.get(p);
-  return p;
+  return BASE + p;
 }
 
 /* ===== テーマ（ライト/ダーク） ===== */
@@ -413,15 +417,14 @@ async function loadData() {
       console.warn(e);
     }
   }
-  const res = await fetch(`${dataPath()}?t=${Date.now()}`, { cache: 'no-store' });
+  const res = await fetch(`${BASE}${dataPath()}?t=${Date.now()}`, { cache: 'no-store' });
   if (!res.ok) return null;
   return normalizeData(await res.json());
 }
 
 async function init() {
   applyTheme();
-  const params = new URLSearchParams(location.search);
-  S.account = (params.get('a') || params.get('u') || location.hash.replace(/^#\/?/, '') || '').trim();
+  S.account = ACCOUNT;
   if (!S.account || !/^[\w.-]+$/.test(S.account)) {
     $('#app').innerHTML = `<p class="center-msg">ページが見つかりません。</p>`;
     return;

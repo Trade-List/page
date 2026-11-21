@@ -1,13 +1,13 @@
 # グッズ取引リスト
 
-Twitter（X）でのグッズ取引（譲・求）用の一覧ページです。`index.html` 1枚で動き、GitHub Pages で公開します。
+Twitter（X）でのグッズ取引（譲・求）用の一覧ページです。アカウントごとに HTML 1枚で動き、GitHub Pages で公開します。
 
 ## ページのURL
 
 | アカウント | URL |
 |---|---|
-| yawayawara | `https://trade-list.github.io/page/?a=yawayawara` |
-| sell___oooo | `https://trade-list.github.io/page/?a=sell___oooo` |
+| yawayawara | `https://trade-list.github.io/page/yawayawara/` |
+| sell___oooo | `https://trade-list.github.io/page/sell___oooo/` |
 
 ## 公開手順（初回のみ）
 
@@ -16,9 +16,10 @@ Twitter（X）でのグッズ取引（譲・求）用の一覧ページです。
 
 ## アカウントの追加・削除
 
-- 追加：`data/<アカウント名>.json` を置く（既存ファイルをコピーして編集）。
-  または、管理者がログインした状態で `?a=<新しい名前>` を開き、編集して「公開する」と自動で作成されます。
-- 削除：`data/<アカウント名>.json` と `images/<アカウント名>/` を削除。
+- 追加：既存のフォルダ（例 `yawayawara/`）をコピーして新しいアカウント名にし、
+  中の `index.html` の `const ACCOUNT = '...'` を書き換える。
+  `data/<アカウント名>.json` は、既存ファイルをコピーするか、管理者がログインして「公開する」を押すと自動で作成されます。
+- 削除：`<アカウント名>/`、`data/<アカウント名>.json`、`images/<アカウント名>/` を削除。
 
 `theme` は `sage`（セージグリーン）/ `blue`（スモーキーブルー）/ `brown`（ブラウン）から選べます（管理モードからも変更可）。
 
@@ -41,7 +42,7 @@ Twitter（X）でのグッズ取引（譲・求）用の一覧ページです。
 ## データ構成
 
 ```
-index.html                 … サイト本体
+<アカウント>/index.html     … 各アカウントのページ
 data/<アカウント>.json      … タイトル・プロフィール・グッズ一覧
 images/<アカウント>/*.jpg   … グッズ画像（アップロード時に自動で縮小）
 ```
