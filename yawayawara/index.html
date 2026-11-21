@@ -142,7 +142,7 @@ button{cursor:pointer}
 .row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .field-in,select.field-in{
   width:100%;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--surface);
-  padding:0 12px;font-size:14px;outline:none;min-width:0;
+  padding:0 12px;font-size:16px;outline:none;min-width:0;
 }
 select.field-in{appearance:none;-webkit-appearance:none;padding-right:28px;
   background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
@@ -245,7 +245,10 @@ footer button{border:0;background:none;color:var(--muted);opacity:.55;font-size:
 .link-btn{border:0;background:none;color:var(--muted);font-size:12px;text-decoration:underline;padding:0;text-align:left}
 .stepper{display:flex;align-items:center;gap:6px}
 .stepper button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface-2);font-size:18px}
-.stepper input{text-align:center;width:80px}
+.stepper input{text-align:center;width:80px;min-width:0;padding-inline:4px}
+.stepper button{flex:none}
+.row2 .stepper input{width:min(80px, 100%)}
+.bulk-defaults{display:grid;gap:10px}
 .form-foot{display:flex;gap:8px;margin-top:6px}
 .form-foot .btn{flex:1}
 .bulk-row{display:grid;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px;min-width:0}
@@ -341,7 +344,7 @@ const store = {
 };
 const linkify = s => esc(s).replace(/https?:\/\/[^\s<]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
 const legacyPriority = /(?:^|\r?\n)▼優先度[ \t]*\r?\n[ \t]*([★☆]{3})[ \t]*(?=\r?\n|$)/;
-const prioritySelect = value => `<select class="field-in">
+const prioritySelect = (value, attrs = '') => `<select class="field-in" ${attrs}>
   <option value="">指定なし</option>${STARS.map(stars => `<option ${stars === value ? 'selected' : ''}>${stars}</option>`).join('')}
 </select>`;
 const defaultSort = tab => tab === 'want' ? 'priority' : 'release_desc';
@@ -711,46 +714,53 @@ function renderList() {
   renderSelectionBar();
 }
 
+function quantityStepper(value, attrs = '') {
+  return `<div class="stepper" data-quantity>
+    <button type="button" data-step="-1" aria-label="個数を減らす">−</button>
+    <input class="field-in" type="text" inputmode="numeric" value="${esc(value)}" ${attrs}>
+    <button type="button" data-step="1" aria-label="個数を増やす">＋</button>
+  </div>`;
+}
+function bindQuantityStepper(stepper, read, min = 0, max = Number.MAX_SAFE_INTEGER) {
+  const input = $('input', stepper);
+  const [decrease, increase] = $$('[data-step]', stepper);
+  const clamp = value => Math.min(max, Math.max(min, value));
+  const quantity = () => clamp(read(input.value));
+  const update = () => {
+    const value = quantity();
+    decrease.disabled = value <= min;
+    increase.disabled = value >= max;
+  };
+  input.addEventListener('input', update);
+  [decrease, increase].forEach(button => button.onclick = () => {
+    input.value = clamp(quantity() + Number(button.dataset.step));
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  update();
+}
+
 function openSelectionQuantity(item, card) {
   const max = Math.floor(item.qty);
   if (max < 1) return;
   const sheet = openModal('選択する個数', `
     <form class="sheet-body">
       <p>${esc(item.name)}（在庫：${max}個）</p>
-      <div class="stepper">
-        <button type="button" data-step="-1" aria-label="個数を減らす">−</button>
-        <input class="field-in" type="text" inputmode="numeric" value="1" aria-label="個数">
-        <button type="button" data-step="1" aria-label="個数を増やす">＋</button>
-      </div>
+      ${quantityStepper(1, 'aria-label="個数"')}
       <div class="form-foot">
         <button class="btn" type="button" data-close>キャンセル</button>
         <button class="btn primary" type="submit">選択する</button>
       </div>
     </form>`, { onClose: () => card.focus() });
   const input = $('input', sheet);
-  const [decrease, increase] = $$('[data-step]', sheet);
-  const quantity = () => {
-    const value = input.value.trim().replace(/[０-９]/g, digit => String(digit.charCodeAt(0) - 0xFF10));
-    return /^\d+$/.test(value) ? Math.min(max, Math.max(1, Number(value))) : 1;
-  };
-  const updateButtons = () => {
-    const value = quantity();
-    decrease.disabled = value <= 1;
-    increase.disabled = value >= max;
-  };
-  input.oninput = updateButtons;
-  [decrease, increase].forEach(button => button.onclick = () => {
-    input.value = Math.min(max, Math.max(1, quantity() + Number(button.dataset.step)));
-    updateButtons();
-  });
+  const quantity = value => Math.min(max, Math.max(1, readQty(value, 1)));
+  bindQuantityStepper($('[data-quantity]', sheet), quantity, 1, max);
   $('form', sheet).onsubmit = event => {
     event.preventDefault();
-    S.selectedGoods.set(item.id, quantity());
+    S.selectedGoods.set(item.id, quantity(input.value));
     closeModal();
     renderList();
     $$('.card', $('#list')).find(next => next.dataset.id === item.id)?.focus();
   };
-  updateButtons();
   $('[data-close]', sheet).focus();
 }
 
@@ -905,7 +915,11 @@ function bindCharacterSuggestions(works, chars, list) {
   refresh();
 }
 const readPrice = value => value === '' ? '' : Math.max(0, Number(value) || 0);
-const readQty = value => Math.max(0, parseInt(value, 10) || 0);
+function readQty(value, fallback = 0) {
+  const digits = String(value).trim().replace(/[０-９]/g, digit => String(digit.charCodeAt(0) - 0xFF10));
+  if (!/^\d+$/.test(digits)) return fallback;
+  return Math.min(Number.MAX_SAFE_INTEGER, Number(digits));
+}
 function openEditor(src, mode) {
   const f = src ? clone(src) : {
     type: S.tab, image: '', name: '', works: S.work ? [S.work] : [], chars: S.char ? [S.char] : [],
@@ -927,7 +941,7 @@ function openEditor(src, mode) {
     <div class="f"><label class="lb" for="itemKind">グッズ種別</label><input class="field-in" id="itemKind" list="dlKinds" value="${esc(f.kind)}"></div>
     <div class="row2">
       <div class="f"><label class="lb" for="fPrice">価格（円）</label><input class="field-in" id="fPrice" type="number" inputmode="numeric" min="0" value="${esc(f.price)}"></div>
-      <div class="f" id="qtyWrap"><label class="lb" for="fQty">個数</label><input class="field-in" id="fQty" type="number" inputmode="numeric" min="0" value="${esc(f.qty)}"></div>
+      <div class="f" id="qtyWrap"><label class="lb" for="fQty">個数</label>${quantityStepper(f.qty, 'id="fQty"')}</div>
     </div>
     <div class="f"><label class="lb">取引方法</label>${seg('method', LABEL.method, f.method)}</div>
     <div class="f"><label class="lb" for="fWish">交換希望条件</label><textarea class="field-in" id="fWish" rows="2">${esc(f.wish)}</textarea></div>
@@ -941,6 +955,7 @@ function openEditor(src, mode) {
     ${suggestLists()}
   </form>`);
   const form = $('#itemForm', sheet);
+  bindQuantityStepper($('[data-quantity]', form), readQty);
   const syncType = () => {
     const t = $('input[name=type]:checked', form).value;
     $('#qtyWrap', form).style.visibility = t === 'give' ? 'visible' : 'hidden';
@@ -999,12 +1014,40 @@ function openEditor(src, mode) {
 /* ===== まとめて登録 ===== */
 function openBulk() {
   const rows = [];
+  const rowFields = (row, id, required = false) => {
+    const input = (key, label, attrs = '') =>
+      `<label class="f"><span class="lb">${label}</span><input class="field-in" data-k="${key}" value="${esc(row[key] ?? '')}" ${attrs}></label>`;
+    return `
+      ${input('name', required ? '名前 <span class="req">*</span>' : '名前', required ? 'required' : '')}
+      ${input('works', '作品名', 'list="dlWorks"')}
+      ${input('chars', 'キャラクター名（カンマ区切り）', `list="${id}Chars"`)}
+      <datalist id="${id}Chars"></datalist>
+      ${input('kind', 'グッズ種別', 'list="dlKinds"')}
+      <div class="row2">
+        ${input('price', '価格（円）', 'type="number" min="0" inputmode="numeric"')}
+        ${input('release', '発売日', 'type="date"')}
+        <div class="f" data-give>
+          <label class="lb" for="${id}Qty">個数</label>
+          ${quantityStepper(row.qty ?? '', `id="${id}Qty" data-k="qty" ${required ? 'placeholder="1"' : ''}`)}
+        </div>
+        <label class="f" data-want><span class="lb">優先度</span>${prioritySelect(row.priority, 'data-k="priority"')}</label>
+      </div>
+      <label class="f"><span class="lb">摘要</span><textarea class="field-in" data-k="note" rows="2">${esc(row.note ?? '')}</textarea></label>`;
+  };
   const sheet = openModal('まとめて登録', `<form class="sheet-body form" id="bulkForm" novalidate>
     <div class="f"><label class="lb">譲・求</label>${seg('type', LABEL.type, S.tab)}</div>
     <div class="sec-title">共通の取引条件</div>
     <div class="f"><label class="lb">取引方法</label>${seg('method', LABEL.method, 'both')}</div>
     <div class="f"><label class="lb" for="bWish">交換希望条件</label><textarea class="field-in" id="bWish" rows="2"></textarea></div>
     <div class="f"><label class="lb">ステータス</label>${seg('status', LABEL.status, 'open')}</div>
+    <div class="sec-title">一括で入力する値</div>
+    <div class="bulk-defaults" id="bDefaults">
+      ${rowFields({}, 'bulkDefault')}
+      <div class="filter-actions">
+        <button type="button" class="btn" id="bApplyAll">すべてに反映</button>
+        <button type="button" class="btn" id="bApplyEmpty">空白にのみ反映</button>
+      </div>
+    </div>
     <div class="sec-title">登録するグッズ</div>
     <div class="filter-actions bulk-actions">
       <label class="file-btn">画像を選ぶ（複数可）<input type="file" accept="image/*" multiple id="bImgs"></label>
@@ -1019,44 +1062,51 @@ function openBulk() {
   const submit = $('#bSubmit', form);
   const err = $('#bErr', form);
   const type = () => $('input[name=type]:checked', form).value;
-  const newRow = image => ({ image, name: '', works: S.work, chars: S.char, kind: S.kind, price: '', qty: '1', release: '', priority: '', note: '' });
+  const newRow = image => ({ image, name: '', works: S.work, chars: S.char, kind: S.kind, price: '', qty: '', release: '', priority: '', note: '' });
   const syncType = () => {
     $$('[data-give]', form).forEach(el => el.hidden = type() !== 'give');
     $$('[data-want]', form).forEach(el => el.hidden = type() !== 'want');
   };
-  const input = (row, key, label, attrs = '') =>
-    `<label class="f"><span class="lb">${label}</span><input class="field-in" data-k="${key}" value="${esc(row[key])}" ${attrs}></label>`;
+  const defaults = $('#bDefaults', form);
+  const list = $('#bList', form);
+  const bulkQty = value => readQty(value, value === '' ? 1 : 0);
+  const bindFields = (container, quantityReader) => {
+    bindQuantityStepper($('[data-quantity]', container), quantityReader);
+    bindCharacterSuggestions($('[data-k=works]', container), $('[data-k=chars]', container), $('datalist', container));
+  };
+  bindFields(defaults, readQty);
+  const applyDefaults = onlyEmpty => {
+    const values = new Map($$('[data-k]', defaults)
+      .filter(field => !field.closest('[hidden]') && field.value.trim() !== '')
+      .map(field => [field.dataset.k, field.value]));
+    $$('[data-k]', list).forEach(field => {
+      if (!values.has(field.dataset.k) || (onlyEmpty && field.value.trim() !== '')) return;
+      field.value = values.get(field.dataset.k);
+      field.dispatchEvent(new Event('input', { bubbles: true }));
+    });
+  };
+  $('#bApplyAll', form).onclick = () => applyDefaults(false);
+  $('#bApplyEmpty', form).onclick = () => applyDefaults(true);
   const renderRows = () => {
-    $('#bList', form).innerHTML = rows.map((row, i) => `<div class="bulk-row">
+    list.innerHTML = rows.map((row, i) => `<div class="bulk-row">
       <div class="bulk-head">
         <div class="pv">${row.image ? `<img src="${esc(imgSrc(row.image))}" alt="">` : '画像なし'}</div>
         <strong>グッズ ${i + 1}</strong>
         <button type="button" class="icon-btn x" aria-label="グッズ ${i + 1} を削除">✕</button>
       </div>
-      ${input(row, 'name', '名前 <span class="req">*</span>', 'required')}
-      ${input(row, 'works', '作品名', 'list="dlWorks"')}
-      ${input(row, 'chars', 'キャラクター名（カンマ区切り）', `list="bulkChars${i}"`)}
-      <datalist id="bulkChars${i}"></datalist>
-      ${input(row, 'kind', 'グッズ種別', 'list="dlKinds"')}
-      <div class="row2">
-        ${input(row, 'price', '価格（円）', 'type="number" min="0" inputmode="numeric"')}
-        ${input(row, 'release', '発売日', 'type="date"')}
-        <div data-give>${input(row, 'qty', '個数', 'type="number" min="0" inputmode="numeric"')}</div>
-        <label class="f" data-want><span class="lb">優先度</span>${prioritySelect(row.priority)}</label>
-      </div>
-      <label class="f"><span class="lb">摘要</span><textarea class="field-in" data-k="note" rows="2">${esc(row.note)}</textarea></label>
+      ${rowFields(row, `bulkRow${i}`, true)}
     </div>`).join('');
     submit.textContent = rows.length ? `${rows.length}件を登録する` : '登録する';
     $$('.bulk-row', form).forEach((el, i) => {
       const row = rows[i];
       $$('[data-k]', el).forEach(field => field.oninput = () => row[field.dataset.k] = field.value);
-      $('select', el).onchange = e => row.priority = e.target.value;
-      bindCharacterSuggestions($('[data-k=works]', el), $('[data-k=chars]', el), $('datalist', el));
-      $('.x', el).onclick = () => { rows.splice(i, 1); renderRows(); };
+      bindFields(el, bulkQty);
+      $('.x', el).onclick = () => { rows.splice(i, 1); refreshRows(); };
     });
-    syncType();
   };
   $$('input[name=type]', form).forEach(r => r.onchange = syncType);
+  const refreshRows = () => { renderRows(); syncType(); };
+  syncType();
   $('#bImgs', form).onchange = async e => {
     const input = e.target;
     const files = [...input.files];
@@ -1071,9 +1121,9 @@ function openBulk() {
     input.disabled = submit.disabled = false;
     if (failures) toast(`${failures}枚の画像を読み込めませんでした`);
     else $('#toast').hidden = true;
-    renderRows();
+    refreshRows();
   };
-  $('#bAddRow', form).onclick = () => { rows.push(newRow('')); renderRows(); };
+  $('#bAddRow', form).onclick = () => { rows.push(newRow('')); refreshRows(); };
   form.onsubmit = e => {
     e.preventDefault();
     if (submit.disabled) return;
@@ -1081,7 +1131,7 @@ function openBulk() {
     if (!rows.length || missing !== -1) {
       err.textContent = rows.length ? `グッズ ${missing + 1} の名前を入力してください` : '画像を選ぶか、行を追加してください';
       err.hidden = false;
-      if (missing !== -1) $$('[data-k=name]', form)[missing].focus();
+      if (missing !== -1) $$('[data-k=name]', list)[missing].focus();
       return;
     }
     const itemType = type();
@@ -1096,7 +1146,7 @@ function openBulk() {
     const newItems = rows.map(row => ({
       ...base, id: uid(), image: row.image, name: row.name.trim(),
       works: splitList(row.works), chars: splitList(row.chars), kind: row.kind.trim(),
-      price: readPrice(row.price), qty: itemType === 'give' ? readQty(row.qty) : 1,
+      price: readPrice(row.price), qty: itemType === 'give' ? bulkQty(row.qty) : 1,
       release: row.release, priority: itemType === 'want' ? row.priority : '', note: row.note.trimEnd(),
     }));
     cur().items.unshift(...newItems);
