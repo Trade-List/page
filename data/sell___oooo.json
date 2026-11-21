@@ -5,6 +5,30 @@
   "admins": [],
   "items": [
     {
+      "id": "mwqfg9ujhr9vk",
+      "type": "give",
+      "image": "images/sell___oooo/mwqfiubfbovyo.jpg",
+      "name": "ジョナスカード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジョナス"
+      ],
+      "kind": "イラストカード",
+      "priority": "",
+      "price": 550,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-21",
+      "updated": "2026-11-21"
+    },
+    {
       "id": "mwqedmozm6u5m",
       "type": "want",
       "image": "",
@@ -13,22 +37,8 @@
         "グノーシア"
       ],
       "chars": [],
-      "price": "",
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "",
-      "note": "▼優先度\n★★★",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "type": "give",
-      "works": [
-        "デレマス"
-      ],
+      "kind": "",
+      "priority": "★☆☆",
       "price": "",
       "qty": 1,
       "method": "both",
@@ -38,11 +48,32 @@
       "note": "",
       "hidden": false,
       "created": "2026-11-21",
-      "updated": "2026-11-21",
+      "updated": "2026-11-21"
+    },
+    {
       "id": "mwqebdfnye51f",
+      "type": "give",
       "image": "images/sell___oooo/mwqej9frjwq49.jpg",
       "name": "あくすた",
-      "chars": []
+      "works": [
+        "デレマス"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "アクリルスタンド",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-21",
+      "updated": "2026-11-21"
     }
-  ]
+  ],
+  "updated": "2026-11-21"
 }
