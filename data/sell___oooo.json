@@ -1,9 +1,81 @@
 {
   "title": "取引リスト（@sell___oooo）",
   "profile": "ご覧いただきありがとうございます。\n\n▼取引について\n・お声がけはDMまたはリプライでお願いします\n・必ず全ての提案に承諾できるとは限りません。ご了承ください\n\n▼譲渡について\n・金額が未記載のものは、ご提示ください\n・郵送の場合、送料もご負担いただきます\n\n▼優先度について\n・★1つのものは★3つを含むお声がけお願いいたします\n\n▼選択モードについて\n・対象のグッズを選択し、個数を選んでいただくと1枚の画像にまとまります。お声がけくださる時にご活用ください。\n（使わずスクショ等でも問題ございません）\n\n在庫は随時更新しています。",
-  "theme": "sage",
+  "theme": "brown",
   "admins": [],
   "items": [
+    {
+      "id": "mwqni9k687hzu",
+      "type": "want",
+      "image": "images/sell___oooo/mwqnnh67p9cy9.jpg",
+      "name": "ファボテリア　ノベルティ特典",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジョナス"
+      ],
+      "kind": "カード",
+      "priority": "★☆☆",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-16",
+      "note": "コレクション用にあと3枚求めております",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqncqz6zx5oz",
+      "type": "want",
+      "image": "images/sell___oooo/mwqnnhs7w0a50.jpg",
+      "name": "インスタントフォト風カード・グノ顔",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジョナス"
+      ],
+      "kind": "カード",
+      "priority": "★☆☆",
+      "price": 300,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-03-22",
+      "note": "配布分と区別がつかない為、一律",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqnckrlyhr3c",
+      "type": "want",
+      "image": "images/sell___oooo/mwqnnii72rfwy.jpg",
+      "name": "インスタントフォト風カード・通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジョナス"
+      ],
+      "kind": "カード",
+      "priority": "★☆☆",
+      "price": 300,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-03-22",
+      "note": "配布分と区別がつかない為、一律",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
     {
       "id": "mwqmkj81fuavf",
       "type": "want",
@@ -843,7 +915,7 @@
       "kind": "ビルディバイド・ブライト",
       "priority": "",
       "price": "",
-      "qty": 1,
+      "qty": 0,
       "method": "both",
       "status": "open",
       "wish": "",
