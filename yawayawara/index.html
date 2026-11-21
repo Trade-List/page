@@ -255,11 +255,11 @@ footer button{border:0;background:none;color:var(--muted);opacity:.55;font-size:
 .toast{position:fixed;left:50%;bottom:calc(110px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:80;
   background:var(--text);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:14px;max-width:calc(100% - 32px);text-align:center;box-shadow:var(--shadow);animation:fade .2s}
 .center-msg{text-align:center;color:var(--muted);padding:80px 16px}
-</style>
+.selection-bar{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--line);padding:10px;z-index:45}.selection-inner{display:flex;gap:8px;align-items:center}.selection-inner .summary{flex:1}.selection-copy{white-space:pre-wrap;padding:12px;border:1px solid var(--line);border-radius:10px}.selection-preview{width:100%;display:block;background:white;border-radius:10px}body.has-selection{padding-bottom:100px}</style>
 </head>
 <body>
 <div id="app" class="wrap"></div>
-<div id="pubBar" class="pub-bar" hidden></div>
+<div id="selectionBar" class="selection-bar" hidden></div><div id="pubBar" class="pub-bar" hidden></div>
 <div id="modalRoot"></div>
 <div id="toast" class="toast" hidden></div>
 
@@ -302,7 +302,7 @@ const SORTS = [
 ];
 
 /* ===== 状態 ===== */
-const S = {
+const S = { selectionMode:false, selectedGoods:new Map(),
   account: '',
   data: null,       // 公開中のデータ
   draft: null,      // 管理モードで編集中のデータ（公開するまで反映しない）
@@ -629,7 +629,7 @@ function renderFilters() {
     </div>
     <div class="filter-actions">
       ${S.tab === 'give' ? `<label class="check"><input type="checkbox" id="fOut" ${S.hideOut ? 'checked' : ''}>在庫なしを隠す</label>` : ''}
-      <button type="button" class="file-btn" id="copySearch">検索条件つきリンクをコピー</button>
+      <button type="button" class="btn" id="selectionToggle">グッズ選択モード</button><button type="button" class="file-btn" id="copySearch">検索条件つきリンクをコピー</button>
     </div>`;
   $('#q').oninput = e => { S.q = e.target.value; updateSearch(); };
   $('#fWork').onchange = e => {
@@ -642,6 +642,7 @@ function renderFilters() {
   $('#fSort').onchange = e => { S.sort = e.target.value; updateSearch(); };
   if ($('#fOut')) $('#fOut').onchange = e => { S.hideOut = e.target.checked; updateSearch(); };
   $('#copySearch').onclick = copySearch;
+  $('#selectionToggle').onclick=()=>{S.selectionMode=!S.selectionMode;S.selectedGoods.clear();$('#selectionToggle').textContent=S.selectionMode?'選択モードを終了':'グッズ選択モード';renderList();renderSelectionBar()};
 }
 window.addEventListener('popstate', () => {
   readSearchURL();
@@ -680,11 +681,15 @@ function renderList() {
   empty.textContent = total === 0 ? (S.admin ? '「＋ グッズを追加」から登録できます' : 'まだ登録がありません') : '条件に合うグッズがありません';
   $$('.card', el).forEach(c => {
     const open = () => openDetail(c.dataset.id);
-    c.onclick = e => { if (e.target.closest('[data-q]')) return; open(); };
+    c.onclick = e => { if (e.target.closest('[data-q]')) return; if(S.selectionMode&&S.tab==='give'){const id=c.dataset.id;if(S.selectedGoods.has(id))S.selectedGoods.delete(id);else{const q=Number(prompt('選択する個数','1'));if(q>0)S.selectedGoods.set(id,Math.min(q,Number(findItem(id).qty)||q));}renderList();return;} open(); };
     c.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
     $$('[data-q]', c).forEach(b => b.onclick = e => { e.stopPropagation(); changeQty(c.dataset.id, +b.dataset.q); });
   });
+  renderSelectionBar();
 }
+
+function renderSelectionBar(){const bar=$('#selectionBar');if(!bar)return;bar.hidden=!S.selectionMode;document.body.classList.toggle('has-selection',S.selectionMode);if(!S.selectionMode){bar.innerHTML='';return}const n=S.selectedGoods.size;bar.innerHTML='<div class="selection-inner"><div class="summary">選択：'+n+'種類</div><button class="btn" id="selClear" '+(!n?'disabled':'')+'>クリア</button><button class="btn primary" id="selDone" '+(!n?'disabled':'')+'>決定</button></div>';$('#selClear').onclick=()=>{S.selectedGoods.clear();renderList()};$('#selDone').onclick=selectionResult}
+async function selectionResult(){const items=[...S.selectedGoods].map(([id,qty])=>{const it=cur().items.find(x=>x.id===id);return it?{...it,selectedQty:qty}:null}).filter(Boolean);const lines=items.map(it=>it.name+'　'+it.selectedQty+'個　'+(it.price===''?'金額未設定':(Number(it.price)*it.selectedQty).toLocaleString()+'円'));const total=items.reduce((s,it)=>s+(it.price===''?0:Number(it.price)*it.selectedQty),0);const text=lines.join('\n')+'\n\n合計：'+total.toLocaleString()+'円';const sheet=openModal('選択したグッズ','<div class="sheet-body"><div id="selPreview">画像を生成中…</div><h3>コピー用テキスト</h3><div class="selection-copy" id="selText"></div><button class="btn" id="selCopy">テキストをコピー</button><button class="btn primary" id="selSave" disabled>画像を保存</button></div>');$('#selText',sheet).textContent=text;$('#selCopy',sheet).onclick=async()=>{try{await navigator.clipboard.writeText(text);toast('コピーしました')}catch{prompt('コピーしてください',text)}};const cols=items.length===1?1:2,cell=360,gap=16,pad=16,rows=Math.ceil(items.length/cols),canvas=document.createElement('canvas');canvas.width=pad*2+cols*cell+(cols-1)*gap;canvas.height=pad*2+rows*cell+(rows-1)*gap;const ctx=canvas.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);for(let i=0;i<items.length;i++){const it=items[i],x=pad+(i%cols)*(cell+gap),y=pad+Math.floor(i/cols)*(cell+gap);ctx.fillStyle='#f3f3f3';ctx.fillRect(x,y,cell,cell);if(it.image){const im=new Image();im.src=imgSrc(it.image);await new Promise(resolve=>{im.onload=resolve;im.onerror=resolve});if(im.naturalWidth){const sc=Math.min((cell-20)/im.width,(cell-20)/im.height),w=im.width*sc,h=im.height*sc;ctx.drawImage(im,x+(cell-w)/2,y+(cell-h)/2,w,h)}}ctx.fillStyle='#333';ctx.beginPath();ctx.roundRect(x+cell-88,y+cell-50,72,34,17);ctx.fill();ctx.fillStyle='#fff';ctx.font='bold 22px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('×'+it.selectedQty,x+cell-52,y+cell-33)}$('#selPreview',sheet).innerHTML='<img class="selection-preview" alt="選択したグッズ画像" src="'+canvas.toDataURL('image/png')+'">';const save=$('#selSave',sheet);save.disabled=false;save.onclick=()=>{const a=document.createElement('a');a.download='selected-goods.png';a.href=canvas.toDataURL('image/png');a.click()}}
 
 function renderPubBar() {
   const bar = $('#pubBar');
