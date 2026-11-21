@@ -4,7 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>取引リスト</title>
+<title>やわらの交換リスト</title>
+<meta property="og:title" content="やわらの交換リスト">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trade-list.github.io/page/yawayawara/">
+<meta property="og:image" content="https://trade-list.github.io/page/images/yawayawara-share.jpg">
+<meta property="og:image:width" content="480">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="やわらの交換リスト">
+<meta name="twitter:image" content="https://trade-list.github.io/page/images/yawayawara-share.jpg">
+<link rel="icon" type="image/png" href="../images/trade-list-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
@@ -586,6 +596,7 @@ function renderHeader() {
   $('#hero').innerHTML = `
     <div class="hero-top">
       <h1>${esc(d.title)}</h1>
+      ${ACCOUNT === 'yawayawara' ? `<a class="icon-btn" href="https://x.com/yawayawayawara" aria-label="Xで @yawayawayawara を開く"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-5-7.4L5.5 22H2.4l7.3-8.4L2 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.5 3.9H5.7L17.8 20Z"/></svg></a>` : ''}
       ${owner ? `<button class="chip-btn ${S.admin ? 'on' : ''}" id="adminBtn" type="button">${S.admin ? '管理モード中' : '管理モード'}</button>` : ''}
       <button class="icon-btn" id="themeBtn" type="button" aria-label="表示テーマを切り替え">${themeIcon()}</button>
     </div>
@@ -680,12 +691,67 @@ function renderList() {
   empty.hidden = list.length > 0;
   empty.textContent = total === 0 ? (S.admin ? '「＋ グッズを追加」から登録できます' : 'まだ登録がありません') : '条件に合うグッズがありません';
   $$('.card', el).forEach(c => {
-    const open = () => openDetail(c.dataset.id);
-    c.onclick = e => { if (e.target.closest('[data-q]')) return; if(S.selectionMode&&S.tab==='give'){const id=c.dataset.id;if(S.selectedGoods.has(id))S.selectedGoods.delete(id);else{const q=Number(prompt('選択する個数','1'));if(q>0)S.selectedGoods.set(id,Math.min(q,Number(findItem(id).qty)||q));}renderList();return;} open(); };
-    c.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
+    const id = c.dataset.id;
+    const open = () => {
+      if (S.selectionMode && S.tab === 'give') {
+        if (S.selectedGoods.delete(id)) renderList();
+        else openSelectionQuantity(findItem(id), c);
+        return;
+      }
+      openDetail(id);
+    };
+    c.onclick = e => { if (!e.target.closest('[data-q]')) open(); };
+    c.onkeydown = e => {
+      if (e.target !== c || (e.key !== 'Enter' && e.key !== ' ')) return;
+      e.preventDefault();
+      open();
+    };
     $$('[data-q]', c).forEach(b => b.onclick = e => { e.stopPropagation(); changeQty(c.dataset.id, +b.dataset.q); });
   });
   renderSelectionBar();
+}
+
+function openSelectionQuantity(item, card) {
+  const max = Math.floor(item.qty);
+  if (max < 1) return;
+  const sheet = openModal('選択する個数', `
+    <form class="sheet-body">
+      <p>${esc(item.name)}（在庫：${max}個）</p>
+      <div class="stepper">
+        <button type="button" data-step="-1" aria-label="個数を減らす">−</button>
+        <input class="field-in" type="text" inputmode="numeric" value="1" aria-label="個数">
+        <button type="button" data-step="1" aria-label="個数を増やす">＋</button>
+      </div>
+      <div class="form-foot">
+        <button class="btn" type="button" data-close>キャンセル</button>
+        <button class="btn primary" type="submit">選択する</button>
+      </div>
+    </form>`, { onClose: () => card.focus() });
+  const input = $('input', sheet);
+  const [decrease, increase] = $('[data-step]', sheet);
+  const quantity = () => {
+    const value = input.value.trim().replace(/[０-９]/g, digit => String(digit.charCodeAt(0) - 0xFF10));
+    return /^\d+$/.test(value) ? Math.min(max, Math.max(1, Number(value))) : 1;
+  };
+  const updateButtons = () => {
+    const value = quantity();
+    decrease.disabled = value <= 1;
+    increase.disabled = value >= max;
+  };
+  input.oninput = updateButtons;
+  [decrease, increase].forEach(button => button.onclick = () => {
+    input.value = Math.min(max, Math.max(1, quantity() + Number(button.dataset.step)));
+    updateButtons();
+  });
+  $('form', sheet).onsubmit = event => {
+    event.preventDefault();
+    S.selectedGoods.set(item.id, quantity());
+    closeModal();
+    renderList();
+    $('.card', $('#list')).find(next => next.dataset.id === item.id)?.focus();
+  };
+  updateButtons();
+  $('[data-close]', sheet).focus();
 }
 
 function renderSelectionBar(){const bar=$('#selectionBar');if(!bar)return;bar.hidden=!S.selectionMode;document.body.classList.toggle('has-selection',S.selectionMode);if(!S.selectionMode){bar.innerHTML='';return}const n=S.selectedGoods.size;bar.innerHTML='<div class="selection-inner"><div class="summary">選択：'+n+'種類</div><button class="btn" id="selClear" '+(!n?'disabled':'')+'>クリア</button><button class="btn primary" id="selDone" '+(!n?'disabled':'')+'>決定</button></div>';$('#selClear').onclick=()=>{S.selectedGoods.clear();renderList()};$('#selDone').onclick=selectionResult}
