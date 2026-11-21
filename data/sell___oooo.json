@@ -5,6 +5,542 @@
   "admins": [],
   "items": [
     {
+      "id": "mwqledyv5rtmz",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlf9x8ny7bk.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ",
+        "オトメ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "みんなで送り出そう",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqldbfxdocgk",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfb0zyrezh.jpg",
+      "name": "ビルディバイド・ブライト　R",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ",
+        "沙明"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "密室の告白",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqlcbm7a74mz",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfbwaxtn13.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "夕里子"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "コールドスリープ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqlbjzfdzwzs",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfcg7p5zy5.jpg",
+      "name": "ビルディバイド・ブライト　R",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "SQの涙",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqlaibikbf40",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfcg7p5zy5.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "野生の勘　コメット",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql9gqbcxyty",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfd03yj4h7.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "まだ一歳児　SQ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql84fnf5acv",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfdjz2fypp.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "マナン"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "天性の嘘つき　マナン",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql6re0fo3uq",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfefci6ja6.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "511番目のスペア　SQ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql5vx6t430f",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlff0vtfyo6.jpg",
+      "name": "ビルディバイド・ブライト　R",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "グノーシア　コメット",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql4xwqv98dk",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlffj5gonuw.jpg",
+      "name": "ビルディバイド・ブライト　R",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "グノーシア　SQ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql3s7xqr4x6",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfg08na9c9.jpg",
+      "name": "ビルディバイド・ブライト　R",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "ループ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql2nwm034v5",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfgophtn5z.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ",
+        "ステラ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "ユーリの弁護",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql1t16zrmsu",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfhfe2vt6f.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "崩壊する宇宙",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwql0f1py4czf",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfiao5qmwg.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "促成学習",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqkzd5h1utxi",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfiulhuylx.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "セツ",
+        "オトメ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "オトメ釣り",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqky1udc0bu9",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfjkl7oh7l.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "人間好き　オトメ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqkw7kfzen34",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfk198imgn.jpg",
+      "name": "ビルディバイド・ブライト　R",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "グノーシア　オトメ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqktq0k31e3s",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfkwj463ct.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ステラ",
+        "ジョナス",
+        "ユーリ",
+        "夕里子"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "進路を、星舟へ。",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqksbgcrhi45",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlflje5rra5.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "セツ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "情報交換　セツ",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqkqvphv79zw",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfmf116pz2.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "セツ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "｢人間だと言え｣",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqkqesuw4onn",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfn71hschh.jpg",
+      "name": "ビルディバイド・ブライト　N",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ",
+        "ジナ"
+      ],
+      "kind": "ビルディバイド・ブライト",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-26",
+      "note": "信頼の計り方",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqke5clqs0ma",
+      "type": "give",
+      "image": "images/sell___oooo/mwqlfo2bawolo.jpg",
+      "name": "eeo store　ホログラム入り缶バッジ",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "缶バッジ",
+      "priority": "",
+      "price": 550,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2023-11-20",
+      "note": "GraffArt\nダイナー",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
       "id": "mwqjsaamk47q9",
       "type": "give",
       "image": "images/sell___oooo/mwqk1tsmqqy3i.jpg",
