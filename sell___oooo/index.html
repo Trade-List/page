@@ -718,7 +718,7 @@ function openSelectionQuantity(item, card) {
       </div>
     </form>`, { onClose: () => card.focus() });
   const input = $('input', sheet);
-  const [decrease, increase] = $('[data-step]', sheet);
+  const [decrease, increase] = $$('[data-step]', sheet);
   const quantity = () => {
     const value = input.value.trim().replace(/[０-９]/g, digit => String(digit.charCodeAt(0) - 0xFF10));
     return /^\d+$/.test(value) ? Math.min(max, Math.max(1, Number(value))) : 1;
@@ -738,7 +738,7 @@ function openSelectionQuantity(item, card) {
     S.selectedGoods.set(item.id, quantity());
     closeModal();
     renderList();
-    $('.card', $('#list')).find(next => next.dataset.id === item.id)?.focus();
+    $$('.card', $('#list')).find(next => next.dataset.id === item.id)?.focus();
   };
   updateButtons();
   $('[data-close]', sheet).focus();
