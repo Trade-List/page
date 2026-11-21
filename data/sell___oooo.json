@@ -3,5 +3,46 @@
   "profile": "ご覧いただきありがとうございます。\n\n▼取引について\n・お声がけはDMまたはリプライでお願いします\n・郵送のみ対応しています（送料はご負担ください）\n・お取り置きは3日までとさせてください\n\n在庫は随時更新しています。",
   "theme": "blue",
   "admins": [],
-  "items": []
+  "items": [
+    {
+      "id": "mwqedmozm6u5m",
+      "type": "want",
+      "image": "",
+      "name": "缶バッジ",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [],
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "",
+      "note": "▼優先度\n★★★",
+      "hidden": false,
+      "created": "2026-11-21",
+      "updated": "2026-11-21"
+    },
+    {
+      "type": "give",
+      "works": [
+        "デレマス"
+      ],
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-21",
+      "updated": "2026-11-21",
+      "id": "mwqebdfnye51f",
+      "image": "images/sell___oooo/mwqej9frjwq49.jpg",
+      "name": "あくすた",
+      "chars": []
+    }
+  ]
 }
