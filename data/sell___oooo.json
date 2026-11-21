@@ -5,162 +5,42 @@
   "admins": [],
   "items": [
     {
-      "id": "mwqivrhb5vufx",
+      "id": "mwqjsaamk47q9",
       "type": "give",
-      "image": "images/sell___oooo/mwqj8ujhznsge.jpg",
-      "name": "eeo store アクリルカード",
+      "image": "images/sell___oooo/mwqk1tsmqqy3i.jpg",
+      "name": "ダンスパ　トランプ風カード",
       "works": [
         "グノーシア"
       ],
       "chars": [
-        "ステラ"
-      ],
-      "kind": "アクリルカード",
-      "priority": "",
-      "price": 710,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-19",
-      "note": "Graff Art\n学園祭",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqiuxkxvm8g0",
-      "type": "give",
-      "image": "images/sell___oooo/mwqj8vagiqvo1.jpg",
-      "name": "eeo store アクリルカード",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "SQ"
-      ],
-      "kind": "アクリルカード",
-      "priority": "",
-      "price": 710,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-19",
-      "note": "Graff Art\n学園祭",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqitrk7jeu8z",
-      "type": "give",
-      "image": "images/sell___oooo/mwqj8vtca6w7i.jpg",
-      "name": "eeo store アクリルカード",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "夕里子"
-      ],
-      "kind": "アクリルカード",
-      "priority": "",
-      "price": 710,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-19",
-      "note": "Graff Art\n学園祭",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqish18r034p",
-      "type": "want",
-      "image": "images/sell___oooo/mwqj8wfhhgi29.jpg",
-      "name": "eeo store アクリルカード",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "ジョナス"
-      ],
-      "kind": "アクリルカード",
-      "priority": "★★★",
-      "price": 700,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-19",
-      "note": "Graff Art\n学園祭",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqir63jtosil",
-      "type": "want",
-      "image": "images/sell___oooo/mwqj8wx92tiad.jpg",
-      "name": "eeo store おなまえアクリルプレートバッジ",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "ジョナス"
-      ],
-      "kind": "アクリルバッジ",
-      "priority": "★★★",
-      "price": 700,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-19",
-      "note": "Graff Art\n学園祭",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqir0qri9ovf",
-      "type": "give",
-      "image": "images/sell___oooo/mwqj8xf1d6w3y.jpg",
-      "name": "eeo store おなまえアクリルプレートバッジ",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "SQ"
-      ],
-      "kind": "アクリルバッジ",
-      "priority": "",
-      "price": 820,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-19",
-      "note": "Graff Art\n学園祭",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqimthv9zlq4",
-      "type": "want",
-      "image": "images/sell___oooo/mwqj8y192ow7r.jpg",
-      "name": "ナンジャタウン　見にゲームC賞ミニイラストシート",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "ジョナス"
+        "コメット"
       ],
       "kind": "カード",
-      "priority": "★★★",
+      "priority": "",
+      "price": 700,
+      "qty": 2,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-11",
+      "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
+      "id": "mwqjmpx1v10y3",
+      "type": "give",
+      "image": "images/sell___oooo/mwqk1uioyd9np.jpg",
+      "name": "ナンジャタウン　C賞ミニイラストシート",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "カード",
+      "priority": "",
       "price": 500,
       "qty": 1,
       "method": "both",
@@ -169,81 +49,33 @@
       "release": "2026-04-17",
       "note": "",
       "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
     },
     {
-      "id": "mwqih6mken5qs",
-      "type": "want",
-      "image": "images/sell___oooo/mwqj8ynkj62hf.jpg",
-      "name": "カラオケの鉄人　ルームキー風カード・通常",
+      "id": "mwqjmmf7jogen",
+      "type": "give",
+      "image": "images/sell___oooo/mwqk1v5fgoo35.jpg",
+      "name": "ナンジャタウン　C賞ミニイラストシート",
       "works": [
         "グノーシア"
       ],
       "chars": [
-        "ジョナス"
+        "ステラ"
       ],
       "kind": "カード",
-      "priority": "★★★",
-      "price": 700,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-03-05",
-      "note": "",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqig2q5ycwfi",
-      "type": "want",
-      "image": "images/sell___oooo/mwqj8z3z4fk2h.jpg",
-      "name": "カラオケの鉄人　缶バッジ・グノ顔",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "ジョナス"
-      ],
-      "kind": "缶バッジ",
-      "priority": "★☆☆",
+      "priority": "",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
-      "release": "2026-03-05",
+      "release": "2026-04-17",
       "note": "",
       "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
-    },
-    {
-      "id": "mwqedmozm6u5m",
-      "type": "want",
-      "image": "images/sell___oooo/mwqj8zlpd6rl6.jpg",
-      "name": "カラオケの鉄人　缶バッジ・通常",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "ジョナス"
-      ],
-      "kind": "缶バッジ",
-      "priority": "★☆☆",
-      "price": 500,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-03-05",
-      "note": "",
-      "hidden": false,
-      "created": "2026-11-21",
-      "updated": "2026-11-21"
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
     }
   ],
-  "updated": "2026-11-21"
+  "updated": "2026-11-22"
 }
