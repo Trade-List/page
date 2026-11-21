@@ -2171,14 +2171,8 @@
       "note": ""
     },
     {
-      "type": "give",
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "hidden": false,
-      "created": "2026-11-22",
-      "updated": "2026-11-22",
       "id": "mwqk8si0jmbo8",
+      "type": "give",
       "image": "images/yawayawara/mwqkp6wc0t75r.jpg",
       "name": "カードフォリオ 鷺沢文香 N",
       "works": [
@@ -2188,11 +2182,17 @@
         "鷺沢文香"
       ],
       "kind": "カードフォリオ",
+      "priority": "",
       "price": "",
       "qty": 3,
-      "release": "2026-11-22",
-      "priority": "",
-      "note": ""
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-21",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
     },
     {
       "type": "give",
