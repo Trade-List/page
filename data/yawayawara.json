@@ -6,6 +6,174 @@
   "admins": [],
   "items": [
     {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw2ggj6n",
+      "image": "images/yawayawara/mwql6vl2wzi9q.jpg",
+      "name": "カードフォリオ 佐藤心 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "★★★",
+      "note": ""
+    },
+    {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw26ey05",
+      "image": "images/yawayawara/mwql6wgct83ou.jpg",
+      "name": "カードフォリオ 佐藤心 CGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2025-09-06",
+      "priority": "★★☆",
+      "note": ""
+    },
+    {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw2kuwe6",
+      "image": "images/yawayawara/mwql6x5xh2qug.jpg",
+      "name": "カードフォリオ 佐藤心 MR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2025-09-06",
+      "priority": "★★★",
+      "note": ""
+    },
+    {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw28jleu",
+      "image": "images/yawayawara/mwql6y1arjkem.jpg",
+      "name": "カードフォリオ 佐藤心 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2025-09-06",
+      "priority": "★★☆",
+      "note": ""
+    },
+    {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw2fep8v",
+      "image": "images/yawayawara/mwql6ynyggcu5.jpg",
+      "name": "カードフォリオ 佐藤心 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2025-09-06",
+      "priority": "★☆☆",
+      "note": ""
+    },
+    {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw2wln5c",
+      "image": "images/yawayawara/mwql6zapolyvr.jpg",
+      "name": "カードフォリオ 佐藤心 R",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "★★★",
+      "note": ""
+    },
+    {
+      "type": "want",
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22",
+      "id": "mwql6sw2tvzrg",
+      "image": "images/yawayawara/mwql705zw7tp9.jpg",
+      "name": "カードフォリオ 佐藤心 N",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "佐藤心"
+      ],
+      "kind": "カードフォリオ",
+      "price": "",
+      "qty": 1,
+      "release": "2026-11-21",
+      "priority": "★★☆",
+      "note": ""
+    },
+    {
       "type": "give",
       "method": "both",
       "status": "open",
