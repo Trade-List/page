@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>取引リスト</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* ===== カラートークン ===== */
+:root{
+  --bg:#f4efe4;          /* 生成り */
+  --surface:#fbf8f1;
+  --surface-2:#efe8da;
+  --text:#4a3f35;        /* くすんだブラウン */
+  --muted:#8b7d6e;
+  --line:#e0d6c4;
+  --shadow:0 1px 2px rgba(74,63,53,.06),0 4px 14px rgba(74,63,53,.06);
+  --warn:#b0875a;
+  --danger:#a5645a;
+  --done:#a39a8e;
+  /* アクセント（アカウントごと） */
+  --sage:#7d8f6f; --blue:#6f8296; --brown:#8c6d55;
+  --accent:var(--sage);
+  --on-accent:#fbf8f1;
+  --accent-soft:color-mix(in srgb,var(--accent) 14%,var(--surface));
+  color-scheme:light;
+}
+:root[data-accent="blue"]{--accent:var(--blue)}
+:root[data-accent="brown"]{--accent:var(--brown)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1e1c19; --surface:#292622; --surface-2:#332f2a;
+    --text:#e9e2d5; --muted:#a69b8b; --line:#3d3832;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+    --warn:#c9a171; --danger:#c98376; --done:#7d756b;
+    --sage:#9fb291; --blue:#97abbf; --brown:#bc9a7f;
+    --on-accent:#1e1c19;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1e1c19; --surface:#292622; --surface-2:#332f2a;
+  --text:#e9e2d5; --muted:#a69b8b; --line:#3d3832;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+  --warn:#c9a171; --danger:#c98376; --done:#7d756b;
+  --sage:#9fb291; --blue:#97abbf; --brown:#bc9a7f;
+  --on-accent:#1e1c19;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI",Meiryo,sans-serif;
+  font-size:15px;line-height:1.6;
+  padding-bottom:calc(24px + env(safe-area-inset-bottom));
+}
+body.has-bar{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+body.lock{overflow:hidden}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+[hidden]{display:none!important}
+
+/* ===== ヘッダー ===== */
+.hero{padding:28px 0 12px}
+.hero-top{display:flex;align-items:flex-start;gap:12px}
+.hero h1{
+  flex:1;margin:0;font-family:"Zen Maru Gothic",inherit;font-weight:700;
+  font-size:clamp(20px,5.4vw,26px);line-height:1.35;letter-spacing:.02em;word-break:break-word;
+}
+.hero h1::before{content:"";display:block;width:28px;height:3px;border-radius:2px;background:var(--accent);margin-bottom:10px}
+.icon-btn{
+  flex:none;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);
+  background:var(--surface);display:grid;place-items:center;font-size:16px;line-height:1;
+}
+.chip-btn{
+  flex:none;height:36px;padding:0 14px;border-radius:18px;border:1px solid var(--accent);
+  background:transparent;color:var(--accent);font-size:13px;font-weight:600;white-space:nowrap;
+}
+.chip-btn.on{background:var(--accent);color:var(--on-accent)}
+.profile-card{
+  margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:14px 16px;box-shadow:var(--shadow);
+}
+.profile{white-space:pre-wrap;word-break:break-word;font-size:14px;overflow:hidden;position:relative}
+.profile.clamp{max-height:7.2em}
+.profile.clamp::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2.4em;background:linear-gradient(transparent,var(--surface))}
+.profile a{color:var(--accent)}
+.more-btn{margin-top:6px;border:0;background:none;color:var(--accent);font-size:13px;padding:0}
+.admin-tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.admin-tools button{
+  height:34px;padding:0 12px;border-radius:10px;border:1px dashed var(--accent);
+  background:var(--accent-soft);color:var(--text);font-size:13px;
+}
+
+/* ===== タブ ===== */
+.tabs-bar{position:sticky;top:0;z-index:20;background:var(--bg);padding:10px 0 8px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;background:var(--surface-2);border-radius:12px;padding:4px}
+.tabs button{
+  border:0;background:transparent;border-radius:9px;height:40px;font-size:16px;font-weight:700;color:var(--muted);
+  font-family:"Zen Maru Gothic",inherit;
+}
+.tabs button .cnt{font-size:12px;font-weight:500;margin-left:4px;opacity:.8}
+.tabs button.on{background:var(--surface);color:var(--accent);box-shadow:var(--shadow)}
+
+/* ===== 絞り込み ===== */
+.filters{display:grid;gap:8px;margin:6px 0 14px}
+.search{position:relative}
+.search input{padding-left:34px}
+.search::before{content:"";position:absolute;left:12px;top:50%;width:11px;height:11px;border:2px solid var(--muted);border-radius:50%;transform:translateY(-62%)}
+.search::after{content:"";position:absolute;left:23px;top:58%;width:6px;height:2px;background:var(--muted);transform:rotate(45deg)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.field-in,select.field-in{
+  width:100%;height:40px;border:1px solid var(--line);border-radius:10px;background:var(--surface);
+  padding:0 12px;font-size:14px;outline:none;min-width:0;
+}
+select.field-in{appearance:none;-webkit-appearance:none;padding-right:28px;
+  background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+  background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+.field-in:focus{border-color:var(--accent)}
+.filter-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted)}
+.check{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
+.check input{width:18px;height:18px;accent-color:var(--accent);margin:0}
+
+/* ===== カード一覧 ===== */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:560px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:800px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card{
+  position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;
+  transition:transform .15s ease;
+}
+.card:active{transform:scale(.985)}
+.card.hid{border:2px dashed var(--muted);opacity:.5;box-shadow:none}
+.card.zero{opacity:.6}
+.thumb{aspect-ratio:1/1;background:var(--surface-2);position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.noimg{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:12px;letter-spacing:.1em}
+.card .tag-hid{position:absolute;top:8px;left:8px;background:var(--surface);color:var(--muted);border:1px dashed var(--muted);font-size:11px;padding:1px 8px;border-radius:999px}
+.card .qty{position:absolute;right:8px;bottom:8px;background:rgba(30,28,25,.68);color:#fbf8f1;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px}
+.card-body{padding:9px 10px 11px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card-name{font-size:13px;line-height:1.45;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;word-break:break-word}
+.card-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:auto;flex-wrap:wrap}
+.price{font-weight:700;font-size:14px;font-variant-numeric:tabular-nums}
+.stars{color:var(--warn);letter-spacing:1px;font-size:13px}
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+.st-open{background:var(--accent);color:var(--on-accent)}
+.st-trading{background:transparent;color:var(--warn);border-color:var(--warn)}
+.st-done{background:var(--surface-2);color:var(--done)}
+.qty-ctrl{display:flex;align-items:center;justify-content:space-between;gap:4px;margin-top:6px;border-top:1px dashed var(--line);padding-top:8px}
+.qty-ctrl button{width:34px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);font-size:17px;line-height:1}
+.qty-ctrl span{font-weight:700;font-variant-numeric:tabular-nums}
+.empty{text-align:center;color:var(--muted);padding:48px 0;font-size:14px}
+
+footer{text-align:center;margin:40px 0 8px}
+footer button{border:0;background:none;color:var(--muted);opacity:.55;font-size:12px;padding:8px}
+
+/* ===== 公開バー ===== */
+.pub-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);
+  box-shadow:0 -4px 16px rgba(0,0,0,.08);padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+}
+.pub-inner{max-width:880px;margin:0 auto;display:flex;align-items:center;gap:8px}
+.pub-state{flex:1;font-size:13px;color:var(--muted);line-height:1.35}
+.pub-state b{color:var(--warn)}
+.btn{height:42px;padding:0 18px;border-radius:12px;border:1px solid var(--line);background:var(--surface-2);font-weight:600;font-size:14px;white-space:nowrap}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.danger{color:var(--danger);border-color:color-mix(in srgb,var(--danger) 40%,var(--line))}
+.btn:disabled{opacity:.45;cursor:default}
+
+/* ===== モーダル ===== */
+.overlay{position:fixed;inset:0;z-index:60;background:rgba(20,18,15,.5);display:flex;align-items:flex-end;justify-content:center;animation:fade .18s ease}
+.sheet{
+  background:var(--bg);width:100%;max-width:640px;max-height:92vh;max-height:92dvh;overflow:auto;border-radius:20px 20px 0 0;
+  padding:0 0 calc(20px + env(safe-area-inset-bottom));animation:up .22s ease;overscroll-behavior:contain;
+}
+@media (min-width:700px){.overlay{align-items:center}.sheet{border-radius:20px;max-height:88vh}}
+@keyframes fade{from{opacity:0}}
+@keyframes up{from{transform:translateY(30px);opacity:.4}}
+.sheet-head{position:sticky;top:0;z-index:2;background:var(--bg);display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.sheet-head h2{flex:1;margin:0;font-size:16px;font-family:"Zen Maru Gothic",inherit}
+.sheet-body{padding:16px}
+.detail-img{background:var(--surface-2);display:grid;place-items:center;min-height:200px}
+.detail-img img{display:block;max-width:100%;max-height:62vh;object-fit:contain}
+.detail-title{font-size:18px;font-weight:700;margin:0 0 6px;line-height:1.45;word-break:break-word}
+.detail-price{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;margin-bottom:12px}
+.detail-price .stars{font-size:16px}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:0;margin:0;border-top:1px solid var(--line)}
+.dl dt,.dl dd{padding:10px 0;border-bottom:1px solid var(--line);margin:0;font-size:14px}
+.dl dt{color:var(--muted);padding-right:16px;white-space:nowrap;font-size:13px}
+.dl dd{word-break:break-word;white-space:pre-wrap}
+.dl .sub{display:block;margin-top:4px;font-size:13px;color:var(--muted)}
+.pill{display:inline-block;background:var(--accent-soft);border-radius:999px;padding:0 10px;margin:0 4px 4px 0;font-size:13px}
+.admin-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding-top:16px;border-top:1px dashed var(--accent)}
+.admin-actions .btn{flex:1;min-width:88px}
+
+/* ===== フォーム ===== */
+.form{display:grid;gap:14px}
+.f label.lb{display:block;font-size:13px;color:var(--muted);margin-bottom:5px;font-weight:600}
+.f .req{color:var(--danger);margin-left:3px}
+.f textarea.field-in{height:auto;min-height:84px;padding:10px 12px;resize:vertical;line-height:1.55}
+.f .hint{font-size:12px;color:var(--muted);margin-top:4px}
+.seg{display:flex;background:var(--surface-2);border-radius:10px;padding:3px;gap:3px}
+.seg label{flex:1;position:relative}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;text-align:center;padding:8px 4px;border-radius:8px;font-size:13px;cursor:pointer;color:var(--muted)}
+.seg input:checked+span{background:var(--surface);color:var(--accent);font-weight:700;box-shadow:var(--shadow)}
+.seg input:focus-visible+span{outline:2px solid var(--accent)}
+.img-pick{display:flex;gap:12px;align-items:center}
+.img-pick .pv{width:96px;height:96px;border-radius:12px;background:var(--surface-2);overflow:hidden;flex:none;display:grid;place-items:center;color:var(--muted);font-size:11px;border:1px solid var(--line)}
+.img-pick .pv img{width:100%;height:100%;object-fit:cover}
+.img-pick .ops{display:flex;flex-direction:column;gap:6px}
+.file-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;height:36px;padding:0 14px;border-radius:10px;border:1px solid var(--accent);color:var(--accent);font-size:13px;font-weight:600;cursor:pointer}
+.file-btn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.link-btn{border:0;background:none;color:var(--muted);font-size:12px;text-decoration:underline;padding:0;text-align:left}
+.prio{display:flex;gap:6px;margin-top:6px}
+.prio button{flex:1;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--warn);letter-spacing:1px}
+.prio button.on{border-color:var(--warn);background:color-mix(in srgb,var(--warn) 14%,var(--surface))}
+.stepper{display:flex;align-items:center;gap:6px}
+.stepper button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface-2);font-size:18px}
+.stepper input{text-align:center;width:80px}
+.form-foot{display:flex;gap:8px;margin-top:6px}
+.form-foot .btn{flex:1}
+.bulk-row{display:grid;grid-template-columns:64px 1fr auto;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px}
+.bulk-row .pv{width:64px;height:64px;border-radius:9px;overflow:hidden;background:var(--surface-2);display:grid;place-items:center;font-size:10px;color:var(--muted)}
+.bulk-row .pv img{width:100%;height:100%;object-fit:cover}
+.bulk-row .ins{display:grid;gap:6px}
+.bulk-row .field-in{height:34px;font-size:13px}
+.bulk-row .x{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--surface-2)}
+.bulk-list{display:grid;gap:8px}
+.sec-title{font-size:13px;font-weight:700;color:var(--accent);margin:4px 0 -4px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.note-box{font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;line-height:1.65}
+.note-box ol{margin:6px 0 0;padding-left:20px}
+.err{color:var(--danger);font-size:13px}
+
+.toast{position:fixed;left:50%;bottom:calc(110px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:80;
+  background:var(--text);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:14px;max-width:calc(100% - 32px);text-align:center;box-shadow:var(--shadow);animation:fade .2s}
+.center-msg{text-align:center;color:var(--muted);padding:80px 16px}
+</style>
+</head>
+<body>
+<div id="app" class="wrap"></div>
+<div id="pubBar" class="pub-bar" hidden></div>
+<div id="modalRoot"></div>
+<div id="toast" class="toast" hidden></div>
+
+<script>
+/* =========================================================
+   設定
+   - アカウントは data/<アカウント名>.json を置くだけで増やせます
+   - URL: index.html?a=<アカウント名>
+   ========================================================= */
+const CONFIG = (() => {
+  // GitHub Pages(https://<owner>.github.io/<repo>/) なら URL から自動判定
+  let owner = 'Trade-List', repo = 'page';
+  const h = location.hostname;
+  if (h.endsWith('.github.io')) {
+    owner = h.replace('.github.io', '');
+    const seg = location.pathname.split('/').filter(Boolean)[0];
+    repo = seg && !seg.endsWith('.html') ? seg : h;
+  }
+  return { owner, repo, dataDir: 'data', imageDir: 'images', maxImage: 1200, jpegQuality: 0.82 };
+})();
+
+const LABEL = {
+  type: { give: '譲', want: '求' },
+  method: { exchange: '交換のみ', sale: '譲渡のみ', both: 'どちらも可' },
+  status: { open: '受付中', trading: '取引中', done: '完了' },
+};
+const STARS = ['★★★', '★★☆', '★☆☆'];
+const SORTS = [
+  ['release_desc', '発売日（新しい順）'],
+  ['release_asc', '発売日（古い順）'],
+  ['updated', '更新日順'],
+  ['work', '作品名順'],
+  ['char', 'キャラ名順'],
+  ['price_asc', '価格（安い順）'],
+  ['price_desc', '価格（高い順）'],
+];
+
+/* ===== 状態 ===== */
+const S = {
+  account: '',
+  data: null,       // 公開中のデータ
+  draft: null,      // 管理モードで編集中のデータ（公開するまで反映しない）
+  fileSha: null,
+  tab: 'give', q: '', work: '', char: '', sort: 'release_desc', hideOut: false,
+  admin: false,
+  token: '', user: '', canPush: false, branch: 'main',
+  pending: new Map(),  // 'pending:xxx' -> dataURL（未アップロード画像）
+  imgCache: new Map(), // 公開直後の画像（Pages反映待ち）の表示用
+  profileOpen: false,
+};
+
+/* ===== ユーティリティ ===== */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clone = o => JSON.parse(JSON.stringify(o));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const splitList = s => String(s || '').split(/[,、，]/).map(x => x.trim()).filter(Boolean);
+const norm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
+const fmtPrice = p => (p === '' || p == null || isNaN(p)) ? '' : '¥' + Number(p).toLocaleString('ja-JP');
+const fmtDate = d => d ? String(d).replace(/-/g, '/') : '';
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} },
+};
+const linkify = s => esc(s).replace(/https?:\/\/[^\s<]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${u}</a>`);
+const getPriority = note => (String(note || '').match(/▼優先度[ \t]*\n[ \t]*([★☆]{3})/) || [])[1] || '';
+function setPriority(note, stars) {
+  note = String(note || '');
+  const re = /▼優先度[ \t]*\n[ \t]*[★☆]{3}/;
+  if (re.test(note)) return note.replace(re, `▼優先度\n${stars}`);
+  note = note.replace(/\s+$/, '');
+  return (note ? note + '\n' : '') + `▼優先度\n${stars}`;
+}
+function toast(msg, ms = 2600) {
+  const t = $('#toast'); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast._t); if (ms) toast._t = setTimeout(() => t.hidden = true, ms);
+}
+const cur = () => S.admin ? S.draft : S.data;
+const isDirty = () => S.admin && S.draft && JSON.stringify(S.draft) !== JSON.stringify(S.data);
+const isOwner = () => {
+  if (!S.user || !S.canPush || !S.data) return false;
+  const admins = (S.data.admins || []).map(a => a.toLowerCase());
+  return admins.length === 0 || admins.includes(S.user.toLowerCase());
+};
+function imgSrc(p) {
+  if (!p) return '';
+  if (p.startsWith('pending:')) return S.pending.get(p) || '';
+  if (S.imgCache.has(p)) return S.imgCache.get(p);
+  return p;
+}
+
+/* ===== テーマ（ライト/ダーク） ===== */
+function applyTheme() {
+  const t = store.get('theme') || 'auto';
+  if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', t);
+}
+function cycleTheme() {
+  const order = ['auto', 'light', 'dark'];
+  const t = store.get('theme') || 'auto';
+  const n = order[(order.indexOf(t) + 1) % 3];
+  store.set('theme', n); applyTheme();
+  toast({ auto: '表示：端末の設定に合わせる', light: '表示：ライト', dark: '表示：ダーク' }[n], 1600);
+  renderHeader();
+}
+const themeIcon = () => ({ auto: "A", light: "☀", dark: "☾" }[store.get('theme') || 'auto']);
+
+/* ===== GitHub API ===== */
+async function gh(path, opts = {}) {
+  const res = await fetch('https://api.github.com' + path, {
+    ...opts,
+    headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${S.token}`, 'X-GitHub-Api-Version': '2022-11-28', ...(opts.body ? { 'Content-Type': 'application/json' } : {}), ...(opts.headers || {}) },
+  });
+  if (!res.ok) {
+    const err = new Error(`GitHub API ${res.status}`); err.status = res.status;
+    try { err.detail = (await res.json()).message; } catch {}
+    throw err;
+  }
+  return res.status === 204 ? null : res.json();
+}
+const repoPath = () => `/repos/${CONFIG.owner}/${CONFIG.repo}`;
+const dataPath = () => `${CONFIG.dataDir}/${S.account}.json`;
+const b64ToUtf8 = b64 => new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\n/g, '')), c => c.charCodeAt(0)));
+
+async function verifyToken() {
+  const u = await gh('/user');
+  const r = await gh(repoPath());
+  S.user = u.login;
+  S.canPush = !r.permissions || !!(r.permissions.push || r.permissions.admin || r.permissions.maintain);
+  S.branch = r.default_branch || 'main';
+}
+
+/* ===== データ読み込み ===== */
+function normalizeData(d) {
+  d = d || {};
+  d.title = d.title || `${S.account} 取引リスト`;
+  d.profile = d.profile || '';
+  d.theme = d.theme || 'sage';
+  d.admins = Array.isArray(d.admins) ? d.admins : [];
+  d.items = Array.isArray(d.items) ? d.items : [];
+  d.items.forEach(it => {
+    it.id = it.id || uid();
+    it.type = it.type === 'want' ? 'want' : 'give';
+    it.works = Array.isArray(it.works) ? it.works : splitList(it.works);
+    it.chars = Array.isArray(it.chars) ? it.chars : splitList(it.chars);
+    it.qty = it.qty == null ? 1 : Number(it.qty) || 0;
+    it.method = it.method || 'both';
+    it.status = it.status || 'open';
+  });
+  return d;
+}
+async function loadData() {
+  // ログイン中は API から最新を取得（Pages の反映待ちを回避）
+  if (S.token && S.user) {
+    try {
+      const f = await gh(`${repoPath()}/contents/${dataPath()}?ref=${encodeURIComponent(S.branch)}&t=${Date.now()}`);
+      S.fileSha = f.sha;
+      return normalizeData(JSON.parse(b64ToUtf8(f.content)));
+    } catch (e) {
+      if (e.status === 404) { S.fileSha = null; return null; }
+      console.warn(e);
+    }
+  }
+  const res = await fetch(`${dataPath()}?t=${Date.now()}`, { cache: 'no-store' });
+  if (!res.ok) return null;
+  return normalizeData(await res.json());
+}
+
+async function init() {
+  applyTheme();
+  const params = new URLSearchParams(location.search);
+  S.account = (params.get('a') || params.get('u') || location.hash.replace(/^#\/?/, '') || '').trim();
+  if (!S.account || !/^[\w.-]+$/.test(S.account)) {
+    $('#app').innerHTML = `<p class="center-msg">ページが見つかりません。</p>`;
+    return;
+  }
+  S.token = store.get('gh_token') || '';
+  if (S.token) {
+    try { await verifyToken(); } catch (e) { S.token = ''; S.user = ''; store.set('gh_token', null); }
+  }
+  let d = null;
+  try { d = await loadData(); } catch (e) { console.warn(e); }
+  if (!d) {
+    if (S.user && S.canPush) {
+      d = normalizeData({}); // 新しいアカウント：公開すると作成されます
+      toast('新しいページです。管理モードで編集して「公開する」で作成されます。', 5000);
+    } else {
+      $('#app').innerHTML = `<p class="center-msg">ページが見つかりません。</p>${footerHTML()}`;
+      bindFooter();
+      return;
+    }
+  }
+  S.data = d;
+  renderAll();
+}
+
+/* ===== 表示用の絞り込み ===== */
+function baseItems() {
+  const d = cur();
+  return d.items.filter(it => {
+    if (it.type !== S.tab) return false;
+    if (S.admin) return true;
+    if (it.hidden) return false;
+    if (it.type === 'give' && it.qty <= 0) return false; // 個数0は一覧から自動で外す
+    return true;
+  });
+}
+function filteredItems() {
+  const q = norm(S.q).split(/\s+/).filter(Boolean);
+  let list = baseItems().filter(it => {
+    if (S.work && !it.works.includes(S.work)) return false;
+    if (S.char && !it.chars.includes(S.char)) return false;
+    if (S.tab === 'give' && S.hideOut && (it.qty <= 0 || it.status === 'done')) return false;
+    if (q.length) {
+      const hay = norm([it.name, it.works.join(' '), it.chars.join(' '), it.note].join(' '));
+      if (!q.every(w => hay.includes(w))) return false;
+    }
+    return true;
+  });
+  const cmpStr = (a, b) => {
+    if (!a && !b) return 0; if (!a) return 1; if (!b) return -1;
+    return a.localeCompare(b, 'ja');
+  };
+  const num = v => (v === '' || v == null || isNaN(v)) ? null : Number(v);
+  const cmpNum = (a, b, dir) => { a = num(a); b = num(b); if (a == null && b == null) return 0; if (a == null) return 1; if (b == null) return -1; return (a - b) * dir; };
+  const sorters = {
+    release_asc: (a, b) => cmpStr(a.release, b.release),
+    updated: (a, b) => String(b.updated || '').localeCompare(String(a.updated || '')),
+    work: (a, b) => cmpStr(a.works[0], b.works[0]) || cmpStr(a.chars[0], b.chars[0]),
+    char: (a, b) => cmpStr(a.chars[0], b.chars[0]) || cmpStr(a.works[0], b.works[0]),
+    price_asc: (a, b) => cmpNum(a.price, b.price, 1),
+    price_desc: (a, b) => cmpNum(a.price, b.price, -1),
+  };
+  // 発売日（新しい順）：日付なしは末尾
+  sorters.release_desc = (a, b) => {
+    if (!a.release && !b.release) return 0; if (!a.release) return 1; if (!b.release) return -1;
+    return String(b.release).localeCompare(String(a.release));
+  };
+  const f = sorters[S.sort] || sorters.release_desc;
+  return list.sort((a, b) => f(a, b) || String(b.updated || '').localeCompare(String(a.updated || '')));
+}
+function workOptions() {
+  return [...new Set(baseItems().flatMap(it => it.works))].sort((a, b) => a.localeCompare(b, 'ja'));
+}
+function charOptions() {
+  return [...new Set(baseItems().filter(it => !S.work || it.works.includes(S.work)).flatMap(it => it.chars))].sort((a, b) => a.localeCompare(b, 'ja'));
+}
+
+/* ===== 描画 ===== */
+function footerHTML() {
+  return `<footer><button id="loginLink" type="button">${S.user ? `ログイン中：${esc(S.user)}（ログアウト）` : '管理者'}</button></footer>`;
+}
+function bindFooter() {
+  const b = $('#loginLink'); if (!b) return;
+  b.onclick = () => S.user ? logout() : openLogin();
+}
+
+function renderAll() {
+  const d = cur();
+  document.documentElement.setAttribute('data-accent', d.theme || 'sage');
+  document.title = d.title || '取引リスト';
+  $('#app').innerHTML = `
+    <header class="hero" id="hero"></header>
+    <div class="tabs-bar"><nav class="tabs" id="tabs" role="tablist"></nav></div>
+    <section class="filters" id="filters"></section>
+    <main class="grid" id="list" aria-live="polite"></main>
+    <p class="empty" id="empty" hidden></p>
+    ${footerHTML()}`;
+  bindFooter();
+  renderHeader(); renderTabs(); renderFilters(); renderList(); renderPubBar();
+}
+
+function renderHeader() {
+  const d = cur();
+  const owner = isOwner();
+  const long = (d.profile || '').split('\n').length > 5 || (d.profile || '').length > 160;
+  $('#hero').innerHTML = `
+    <div class="hero-top">
+      <h1>${esc(d.title)}</h1>
+      ${owner ? `<button class="chip-btn ${S.admin ? 'on' : ''}" id="adminBtn" type="button">${S.admin ? '管理モード中' : '管理モード'}</button>` : ''}
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="表示テーマを切り替え">${themeIcon()}</button>
+    </div>
+    ${d.profile ? `<div class="profile-card">
+      <div class="profile ${long && !S.profileOpen ? 'clamp' : ''}">${linkify(d.profile)}</div>
+      ${long ? `<button class="more-btn" id="moreBtn" type="button">${S.profileOpen ? '閉じる' : '続きを読む'}</button>` : ''}
+    </div>` : ''}
+    ${S.admin ? `<div class="admin-tools">
+      <button type="button" id="addBtn">＋ グッズを追加</button>
+      <button type="button" id="bulkBtn">まとめて登録</button>
+      <button type="button" id="profBtn">タイトル・プロフィール編集</button>
+    </div>` : ''}`;
+  $('#themeBtn').onclick = cycleTheme;
+  if ($('#moreBtn')) $('#moreBtn').onclick = () => { S.profileOpen = !S.profileOpen; renderHeader(); };
+  if ($('#adminBtn')) $('#adminBtn').onclick = toggleAdmin;
+  if (S.admin) {
+    $('#addBtn').onclick = () => openEditor(null, 'new');
+    $('#bulkBtn').onclick = openBulk;
+    $('#profBtn').onclick = openProfileEditor;
+  }
+}
+
+function renderTabs() {
+  const count = t => cur().items.filter(it => it.type === t && (S.admin || (!it.hidden && (t === 'want' || it.qty > 0)))).length;
+  $('#tabs').innerHTML = ['give', 'want'].map(t =>
+    `<button type="button" role="tab" data-tab="${t}" class="${S.tab === t ? 'on' : ''}" aria-selected="${S.tab === t}">${LABEL.type[t]}<span class="cnt">${count(t)}</span></button>`).join('');
+  $$('#tabs button').forEach(b => b.onclick = () => {
+    if (S.tab === b.dataset.tab) return;
+    S.tab = b.dataset.tab; S.work = ''; S.char = '';
+    renderTabs(); renderFilters(); renderList();
+  });
+}
+
+function renderFilters() {
+  const works = workOptions(), chars = charOptions();
+  if (S.work && !works.includes(S.work)) S.work = '';
+  if (S.char && !chars.includes(S.char)) S.char = '';
+  $('#filters').innerHTML = `
+    <div class="search"><input class="field-in" id="q" type="search" placeholder="名前・作品名・キャラ名・摘要で検索" value="${esc(S.q)}" enterkeyhint="search"></div>
+    <div class="row2">
+      <select class="field-in" id="fWork" aria-label="作品名"><option value="">すべての作品</option>${works.map(w => `<option ${w === S.work ? 'selected' : ''}>${esc(w)}</option>`).join('')}</select>
+      <select class="field-in" id="fChar" aria-label="キャラ名"><option value="">すべてのキャラ</option>${chars.map(c => `<option ${c === S.char ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select>
+    </div>
+    <div class="filter-foot">
+      <select class="field-in" id="fSort" aria-label="並び替え" style="flex:1;max-width:60%">${SORTS.map(([v, l]) => `<option value="${v}" ${v === S.sort ? 'selected' : ''}>${l}</option>`).join('')}</select>
+      ${S.tab === 'give' ? `<label class="check"><input type="checkbox" id="fOut" ${S.hideOut ? 'checked' : ''}>在庫なしを隠す</label>` : '<span></span>'}
+    </div>`;
+  $('#q').oninput = e => { S.q = e.target.value; renderList(); };
+  $('#fWork').onchange = e => { S.work = e.target.value; S.char = ''; renderFilters(); renderList(); };
+  $('#fChar').onchange = e => { S.char = e.target.value; renderList(); };
+  $('#fSort').onchange = e => { S.sort = e.target.value; renderList(); };
+  if ($('#fOut')) $('#fOut').onchange = e => { S.hideOut = e.target.checked; renderList(); };
+}
+
+function statusBadge(st) { return `<span class="badge st-${st}">${LABEL.status[st] || ''}</span>`; }
+
+function cardHTML(it) {
+  const src = imgSrc(it.image);
+  const give = it.type === 'give';
+  const prio = !give ? getPriority(it.note) : '';
+  return `<article class="card ${it.hidden ? 'hid' : ''} ${give && it.qty <= 0 ? 'zero' : ''}" data-id="${it.id}" tabindex="0" role="button" aria-label="${esc(it.name)}">
+    <div class="thumb">
+      ${src ? `<img src="${esc(src)}" alt="" loading="lazy" decoding="async">` : `<div class="noimg">NO IMAGE</div>`}
+      ${it.hidden ? `<span class="tag-hid">非表示</span>` : ''}
+      ${give ? `<span class="qty">×${it.qty}</span>` : ''}
+    </div>
+    <div class="card-body">
+      <div class="card-name">${esc(it.name)}</div>
+      <div class="card-meta">
+        <span><span class="price">${fmtPrice(it.price) || '—'}</span>${prio ? ` <span class="stars">${prio}</span>` : ''}</span>
+        ${give ? statusBadge(it.status) : ''}
+      </div>
+      ${S.admin && give ? `<div class="qty-ctrl"><button type="button" data-q="-1" aria-label="個数を減らす">−</button><span>${it.qty <= 0 ? '在庫0' : '×' + it.qty}</span><button type="button" data-q="1" aria-label="個数を増やす">＋</button></div>` : ''}
+    </div>
+  </article>`;
+}
+
+function renderList() {
+  const list = filteredItems();
+  const el = $('#list');
+  el.innerHTML = list.map(cardHTML).join('');
+  const empty = $('#empty');
+  const total = baseItems().length;
+  empty.hidden = list.length > 0;
+  empty.textContent = total === 0 ? (S.admin ? '「＋ グッズを追加」から登録できます' : 'まだ登録がありません') : '条件に合うグッズがありません';
+  $$('.card', el).forEach(c => {
+    const open = () => openDetail(c.dataset.id);
+    c.onclick = e => { if (e.target.closest('[data-q]')) return; open(); };
+    c.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
+    $$('[data-q]', c).forEach(b => b.onclick = e => { e.stopPropagation(); changeQty(c.dataset.id, +b.dataset.q); });
+  });
+}
+
+function renderPubBar() {
+  const bar = $('#pubBar');
+  document.body.classList.toggle('has-bar', S.admin);
+  if (!S.admin) { bar.hidden = true; return; }
+  const dirty = isDirty();
+  bar.hidden = false;
+  bar.innerHTML = `<div class="pub-inner">
+    <div class="pub-state">${dirty ? '<b>● 未公開の変更があります</b><br>「公開する」まで反映されません' : '変更はありません'}</div>
+    <button class="btn" id="discardBtn" type="button" ${dirty ? '' : 'disabled'}>破棄</button>
+    <button class="btn primary" id="publishBtn" type="button" ${dirty ? '' : 'disabled'}>公開する</button>
+  </div>`;
+  $('#discardBtn').onclick = () => { if (confirm('未公開の変更をすべて破棄しますか？')) { S.draft = clone(S.data); S.pending.clear(); afterChange(); } };
+  $('#publishBtn').onclick = publish;
+}
+
+function afterChange() {
+  renderAll();
+}
+
+/* ===== 管理モード ===== */
+function toggleAdmin() {
+  if (!S.admin) {
+    S.admin = true; S.draft = clone(S.data);
+  } else {
+    if (isDirty() && !confirm('未公開の変更があります。破棄して管理モードを終了しますか？')) return;
+    S.admin = false; S.draft = null; S.pending.clear();
+  }
+  renderAll();
+}
+function findItem(id) { return cur().items.find(it => it.id === id); }
+function changeQty(id, delta) {
+  const it = findItem(id); if (!it) return;
+  it.qty = Math.max(0, (Number(it.qty) || 0) + delta);
+  it.updated = today();
+  if (it.qty === 0) toast('在庫0になりました。公開後、一覧から自動で外れます', 2400);
+  renderAll();
+}
+window.addEventListener('beforeunload', e => { if (isDirty()) { e.preventDefault(); e.returnValue = ''; } });
+
+/* ===== モーダル ===== */
+function openModal(title, bodyHTML, { onClose } = {}) {
+  closeModal();
+  const ov = document.createElement('div');
+  ov.className = 'overlay';
+  ov.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}">
+    <div class="sheet-head"><h2>${esc(title)}</h2><button class="icon-btn" type="button" data-close aria-label="閉じる">✕</button></div>
+    ${bodyHTML}</div>`;
+  ov.addEventListener('click', e => { if (e.target === ov || e.target.closest('[data-close]')) closeModal(); });
+  ov._onClose = onClose;
+  $('#modalRoot').appendChild(ov);
+  document.body.classList.add('lock');
+  return $('.sheet', ov);
+}
+function closeModal() {
+  const ov = $('#modalRoot .overlay'); if (!ov) return;
+  ov._onClose && ov._onClose();
+  ov.remove(); document.body.classList.remove('lock');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* ===== 詳細 ===== */
+function openDetail(id) {
+  const it = findItem(id); if (!it) return;
+  const give = it.type === 'give';
+  const src = imgSrc(it.image);
+  const prio = !give ? getPriority(it.note) : '';
+  const pills = arr => arr.length ? arr.map(x => `<span class="pill">${esc(x)}</span>`).join('') : '—';
+  const sheet = openModal(`${LABEL.type[it.type]}｜詳細`, `
+    <div class="detail-img">${src ? `<img src="${esc(src)}" alt="${esc(it.name)}">` : `<div class="noimg" style="position:static;padding:60px 0">NO IMAGE</div>`}</div>
+    <div class="sheet-body">
+      <h3 class="detail-title">${esc(it.name)}</h3>
+      <div class="detail-price"><span>${fmtPrice(it.price) || '価格未設定'}</span>${prio ? `<span class="stars">${prio}</span>` : ''}${statusBadge(it.status)}${it.hidden ? '<span class="badge st-done">非表示</span>' : ''}</div>
+      <dl class="dl">
+        <dt>作品名</dt><dd>${pills(it.works)}</dd>
+        <dt>キャラ名</dt><dd>${pills(it.chars)}</dd>
+        <dt>価格</dt><dd>${fmtPrice(it.price) || '—'}</dd>
+        ${give ? `<dt>個数</dt><dd>${it.qty}</dd>` : ''}
+        <dt>取引方法</dt><dd>${LABEL.method[it.method] || '—'}${it.wish ? `<span class="sub">交換希望条件：${esc(it.wish)}</span>` : ''}</dd>
+        <dt>ステータス</dt><dd>${LABEL.status[it.status] || '—'}</dd>
+        <dt>発売日</dt><dd>${esc(fmtDate(it.release)) || '—'}</dd>
+        <dt>更新日</dt><dd>${esc(fmtDate(it.updated)) || '—'}</dd>
+        <dt>摘要</dt><dd>${it.note ? linkify(it.note) : '—'}</dd>
+      </dl>
+      ${S.admin ? `<div class="admin-actions">
+        ${give ? `<div class="stepper" style="width:100%;justify-content:center"><button type="button" data-dq="-1">−</button><b style="min-width:60px;text-align:center">×${it.qty}</b><button type="button" data-dq="1">＋</button></div>` : ''}
+        <button class="btn" type="button" id="dEdit">編集</button>
+        <button class="btn" type="button" id="dDup">複製</button>
+        <button class="btn danger" type="button" id="dDel">削除</button>
+      </div>` : ''}
+    </div>`);
+  if (S.admin) {
+    $$('[data-dq]', sheet).forEach(b => b.onclick = () => { changeQty(id, +b.dataset.dq); openDetail(id); });
+    $('#dEdit', sheet).onclick = () => openEditor(it, 'edit');
+    $('#dDup', sheet).onclick = () => openEditor(it, 'dup');
+    $('#dDel', sheet).onclick = () => {
+      if (!confirm(`「${it.name}」を削除しますか？`)) return;
+      cur().items = cur().items.filter(x => x.id !== id);
+      closeModal(); afterChange(); toast('削除しました（公開するまで反映されません）');
+    };
+  }
+}
+
+/* ===== 画像の縮小 ===== */
+function loadImageFile(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      const max = CONFIG.maxImage;
+      let { width: w, height: h } = img;
+      const r = Math.min(1, max / Math.max(w, h));
+      w = Math.round(w * r); h = Math.round(h * r);
+      const cv = document.createElement('canvas'); cv.width = w; cv.height = h;
+      const ctx = cv.getContext('2d');
+      ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, h);
+      ctx.drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      resolve(cv.toDataURL('image/jpeg', CONFIG.jpegQuality));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('画像を読み込めませんでした')); };
+    img.src = url;
+  });
+}
+async function addPendingImage(file) {
+  const dataURL = await loadImageFile(file);
+  const key = 'pending:' + uid();
+  S.pending.set(key, dataURL);
+  return key;
+}
+
+/* ===== 編集フォーム ===== */
+const seg = (name, map, val) => `<div class="seg">${Object.entries(map).map(([v, l]) =>
+  `<label><input type="radio" name="${name}" value="${v}" ${v === val ? 'checked' : ''}><span>${l}</span></label>`).join('')}</div>`;
+function suggestLists() {
+  const items = cur().items;
+  const works = [...new Set(items.flatMap(i => i.works))];
+  const chars = [...new Set(items.flatMap(i => i.chars))];
+  return `<datalist id="dlWorks">${works.map(w => `<option value="${esc(w)}">`).join('')}</datalist>
+          <datalist id="dlChars">${chars.map(c => `<option value="${esc(c)}">`).join('')}</datalist>`;
+}
+
+function openEditor(src, mode) {
+  const f = src ? clone(src) : {
+    type: S.tab, image: '', name: '', works: S.work ? [S.work] : [], chars: S.char ? [S.char] : [],
+    price: '', qty: 1, method: 'both', status: 'open', wish: '', release: '', note: '', hidden: false,
+  };
+  if (mode === 'dup') { f.id = uid(); }
+  const title = { new: 'グッズを追加', edit: 'グッズを編集', dup: '複製して追加' }[mode];
+  const sheet = openModal(title, `<form class="sheet-body form" id="itemForm" novalidate>
+    ${mode === 'dup' ? `<div class="note-box">内容を引き継いでいます。種類・キャラ・写真などを変更して保存してください。</div>` : ''}
+    <div class="f"><label class="lb">種類</label>${seg('type', LABEL.type, f.type)}</div>
+    <div class="f"><label class="lb">画像</label>
+      <div class="img-pick"><div class="pv" id="pv">${f.image ? `<img src="${esc(imgSrc(f.image))}" alt="">` : 'なし'}</div>
+        <div class="ops"><label class="file-btn">画像を選ぶ<input type="file" accept="image/*" id="imgIn"></label>
+          <button type="button" class="link-btn" id="imgRm" ${f.image ? '' : 'hidden'}>画像を外す</button></div></div></div>
+    <div class="f"><label class="lb" for="fName">名前<span class="req">*</span></label><input class="field-in" id="fName" value="${esc(f.name)}" required></div>
+    <div class="f"><label class="lb" for="fWorks">作品名</label><input class="field-in" id="fWorks" list="dlWorks" value="${esc(f.works.join(', '))}"><div class="hint">カンマ（,）区切りで複数入力できます</div></div>
+    <div class="f"><label class="lb" for="fChars">キャラ名</label><input class="field-in" id="fChars" list="dlChars" value="${esc(f.chars.join(', '))}"><div class="hint">カンマ（,）区切りで複数入力できます</div></div>
+    <div class="row2">
+      <div class="f"><label class="lb" for="fPrice">価格（円）</label><input class="field-in" id="fPrice" type="number" inputmode="numeric" min="0" value="${esc(f.price)}"></div>
+      <div class="f" id="qtyWrap"><label class="lb" for="fQty">個数</label><input class="field-in" id="fQty" type="number" inputmode="numeric" min="0" value="${esc(f.qty)}"></div>
+    </div>
+    <div class="f"><label class="lb">取引方法</label>${seg('method', LABEL.method, f.method)}</div>
+    <div class="f"><label class="lb" for="fWish">交換希望条件</label><textarea class="field-in" id="fWish" rows="2">${esc(f.wish)}</textarea></div>
+    <div class="f"><label class="lb">ステータス</label>${seg('status', LABEL.status, f.status)}</div>
+    <div class="f"><label class="lb" for="fRel">発売日</label><input class="field-in" id="fRel" type="date" value="${esc(f.release)}"></div>
+    <div class="f"><label class="lb" for="fNote">摘要</label><textarea class="field-in" id="fNote" rows="4">${esc(f.note)}</textarea>
+      <div id="prioWrap"><div class="hint">優先度（タップで摘要の最後に入ります）</div>
+      <div class="prio">${STARS.map(s => `<button type="button" data-star="${s}">${s}</button>`).join('')}</div></div></div>
+    <label class="check"><input type="checkbox" id="fHidden" ${f.hidden ? 'checked' : ''}>一覧に表示しない（データは残ります）</label>
+    <p class="err" id="fErr" hidden></p>
+    <div class="form-foot"><button type="button" class="btn" data-close>キャンセル</button><button type="submit" class="btn primary">保存</button></div>
+    ${suggestLists()}
+  </form>`);
+  const form = $('#itemForm', sheet);
+  const syncType = () => {
+    const t = $('input[name=type]:checked', form).value;
+    $('#qtyWrap', form).style.visibility = t === 'give' ? 'visible' : 'hidden';
+    $('#prioWrap', form).hidden = t !== 'want';
+  };
+  const syncPrio = () => { const p = getPriority($('#fNote', form).value); $$('[data-star]', form).forEach(b => b.classList.toggle('on', b.dataset.star === p)); };
+  $$('input[name=type]', form).forEach(r => r.onchange = syncType);
+  syncType(); syncPrio();
+  $('#fNote', form).oninput = syncPrio;
+  $$('[data-star]', form).forEach(b => b.onclick = () => { const n = $('#fNote', form); n.value = setPriority(n.value, b.dataset.star); syncPrio(); });
+  $('#imgIn', form).onchange = async e => {
+    const file = e.target.files[0]; if (!file) return;
+    try {
+      f.image = await addPendingImage(file);
+      $('#pv', form).innerHTML = `<img src="${imgSrc(f.image)}" alt="">`; $('#imgRm', form).hidden = false;
+    } catch (err) { toast(err.message); }
+    e.target.value = '';
+  };
+  $('#imgRm', form).onclick = () => { f.image = ''; $('#pv', form).textContent = 'なし'; $('#imgRm', form).hidden = true; };
+  form.onsubmit = e => {
+    e.preventDefault();
+    const name = $('#fName', form).value.trim();
+    if (!name) { const er = $('#fErr', form); er.textContent = '名前を入力してください'; er.hidden = false; $('#fName', form).focus(); return; }
+    const type = $('input[name=type]:checked', form).value;
+    const priceV = $('#fPrice', form).value.trim();
+    const item = {
+      id: mode === 'edit' ? f.id : (mode === 'dup' ? f.id : uid()),
+      type, image: f.image || '', name,
+      works: splitList($('#fWorks', form).value), chars: splitList($('#fChars', form).value),
+      price: priceV === '' ? '' : Math.max(0, Number(priceV) || 0),
+      qty: type === 'give' ? Math.max(0, parseInt($('#fQty', form).value, 10) || 0) : (Number(f.qty) || 1),
+      method: $('input[name=method]:checked', form).value,
+      status: $('input[name=status]:checked', form).value,
+      wish: $('#fWish', form).value.trim(),
+      release: $('#fRel', form).value,
+      note: $('#fNote', form).value.replace(/\s+$/, ''),
+      hidden: $('#fHidden', form).checked,
+      created: mode === 'edit' ? (f.created || today()) : today(),
+      updated: today(),
+    };
+    const items = cur().items;
+    if (mode === 'edit') { const i = items.findIndex(x => x.id === item.id); items[i] = item; }
+    else items.unshift(item);
+    if (type !== S.tab) { S.tab = type; S.work = ''; S.char = ''; }
+    closeModal(); afterChange();
+    toast(mode === 'edit' ? '保存しました（未公開）' : '追加しました（未公開）');
+  };
+}
+
+/* ===== まとめて登録 ===== */
+function openBulk() {
+  const rows = []; // {image, name, chars}
+  const sheet = openModal('まとめて登録', `<form class="sheet-body form" id="bulkForm" novalidate>
+    <div class="note-box">共通の内容を入力し、画像を複数選ぶと1枚ずつグッズとして登録されます。名前・キャラ名は行ごとに変更できます。</div>
+    <div class="f"><label class="lb">種類</label>${seg('type', LABEL.type, S.tab)}</div>
+    <div class="sec-title">共通の内容</div>
+    <div class="f"><label class="lb" for="bName">名前</label><input class="field-in" id="bName" placeholder="例：アクリルスタンド"></div>
+    <div class="f"><label class="lb" for="bWorks">作品名</label><input class="field-in" id="bWorks" list="dlWorks" value="${esc(S.work)}"></div>
+    <div class="row2">
+      <div class="f"><label class="lb" for="bPrice">価格（円）</label><input class="field-in" id="bPrice" type="number" inputmode="numeric" min="0"></div>
+      <div class="f" id="bQtyWrap"><label class="lb" for="bQty">個数</label><input class="field-in" id="bQty" type="number" inputmode="numeric" min="0" value="1"></div>
+    </div>
+    <div class="f"><label class="lb">取引方法</label>${seg('method', LABEL.method, 'both')}</div>
+    <div class="f"><label class="lb" for="bWish">交換希望条件</label><textarea class="field-in" id="bWish" rows="2"></textarea></div>
+    <div class="f"><label class="lb">ステータス</label>${seg('status', LABEL.status, 'open')}</div>
+    <div class="f"><label class="lb" for="bRel">発売日</label><input class="field-in" id="bRel" type="date"></div>
+    <div class="f"><label class="lb" for="bNote">摘要</label><textarea class="field-in" id="bNote" rows="3"></textarea>
+      <div id="bPrioWrap"><div class="prio">${STARS.map(s => `<button type="button" data-star="${s}">${s}</button>`).join('')}</div></div></div>
+    <div class="sec-title">登録するグッズ</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <label class="file-btn">画像を選ぶ（複数可）<input type="file" accept="image/*" multiple id="bImgs"></label>
+      <button type="button" class="file-btn" id="bAddRow" style="background:none">＋ 画像なしで行を追加</button>
+    </div>
+    <div class="bulk-list" id="bList"></div>
+    <p class="err" id="bErr" hidden></p>
+    <div class="form-foot"><button type="button" class="btn" data-close>キャンセル</button><button type="submit" class="btn primary" id="bSubmit">登録する</button></div>
+    ${suggestLists()}
+  </form>`);
+  const form = $('#bulkForm', sheet);
+  const syncType = () => {
+    const t = $('input[name=type]:checked', form).value;
+    $('#bQtyWrap', form).style.visibility = t === 'give' ? 'visible' : 'hidden';
+    $('#bPrioWrap', form).hidden = t !== 'want';
+  };
+  const syncPrio = () => { const p = getPriority($('#bNote', form).value); $$('[data-star]', form).forEach(b => b.classList.toggle('on', b.dataset.star === p)); };
+  $$('input[name=type]', form).forEach(r => r.onchange = syncType); syncType();
+  $('#bNote', form).oninput = syncPrio;
+  $$('[data-star]', form).forEach(b => b.onclick = () => { const n = $('#bNote', form); n.value = setPriority(n.value, b.dataset.star); syncPrio(); });
+  const renderRows = () => {
+    $('#bList', form).innerHTML = rows.map((r, i) => `<div class="bulk-row" data-i="${i}">
+      <div class="pv">${r.image ? `<img src="${imgSrc(r.image)}" alt="">` : 'なし'}</div>
+      <div class="ins"><input class="field-in" data-k="name" placeholder="名前（空欄なら共通の名前）" value="${esc(r.name)}">
+        <input class="field-in" data-k="chars" list="dlChars" placeholder="キャラ名（カンマ区切り）" value="${esc(r.chars)}"></div>
+      <button type="button" class="x" aria-label="この行を削除">✕</button></div>`).join('');
+    $('#bSubmit', form).textContent = rows.length ? `${rows.length}件を登録する` : '登録する';
+    $$('.bulk-row', form).forEach(el => {
+      const r = rows[+el.dataset.i];
+      $$('[data-k]', el).forEach(inp => inp.oninput = () => r[inp.dataset.k] = inp.value);
+      $('.x', el).onclick = () => { rows.splice(+el.dataset.i, 1); renderRows(); };
+    });
+  };
+  $('#bImgs', form).onchange = async e => {
+    const files = [...e.target.files]; e.target.value = '';
+    toast(`画像を読み込み中…（${files.length}枚）`, 0);
+    for (const file of files) {
+      try { rows.push({ image: await addPendingImage(file), name: '', chars: '' }); } catch (err) { console.warn(err); }
+    }
+    $('#toast').hidden = true; renderRows();
+  };
+  $('#bAddRow', form).onclick = () => { rows.push({ image: '', name: '', chars: '' }); renderRows(); };
+  form.onsubmit = e => {
+    e.preventDefault();
+    const err = $('#bErr', form);
+    if (!rows.length) { err.textContent = '画像を選ぶか、行を追加してください'; err.hidden = false; return; }
+    const common = $('#bName', form).value.trim();
+    if (rows.some(r => !r.name.trim() && !common)) { err.textContent = '名前が空の行があります（共通の名前を入れると省略できます）'; err.hidden = false; return; }
+    const type = $('input[name=type]:checked', form).value;
+    const priceV = $('#bPrice', form).value.trim();
+    const base = {
+      type, works: splitList($('#bWorks', form).value),
+      price: priceV === '' ? '' : Math.max(0, Number(priceV) || 0),
+      qty: type === 'give' ? Math.max(0, parseInt($('#bQty', form).value, 10) || 0) : 1,
+      method: $('input[name=method]:checked', form).value,
+      status: $('input[name=status]:checked', form).value,
+      wish: $('#bWish', form).value.trim(), release: $('#bRel', form).value,
+      note: $('#bNote', form).value.replace(/\s+$/, ''), hidden: false, created: today(), updated: today(),
+    };
+    const newItems = rows.map(r => ({ ...clone(base), id: uid(), image: r.image, name: r.name.trim() || common, chars: splitList(r.chars) }));
+    cur().items.unshift(...newItems);
+    if (type !== S.tab) { S.tab = type; S.work = ''; S.char = ''; }
+    closeModal(); afterChange(); toast(`${newItems.length}件を追加しました（未公開）`);
+  };
+}
+
+/* ===== タイトル・プロフィール ===== */
+function openProfileEditor() {
+  const d = cur();
+  const sheet = openModal('タイトル・プロフィール編集', `<form class="sheet-body form" id="profForm">
+    <div class="f"><label class="lb" for="pTitle">タイトル</label><input class="field-in" id="pTitle" value="${esc(d.title)}"></div>
+    <div class="f"><label class="lb" for="pProf">プロフィール（取引ルールなど）</label><textarea class="field-in" id="pProf" rows="10">${esc(d.profile)}</textarea></div>
+    <div class="f"><label class="lb">テーマカラー</label>${seg('theme', { sage: 'セージグリーン', blue: 'スモーキーブルー', brown: 'ブラウン' }, d.theme)}</div>
+    <div class="form-foot"><button type="button" class="btn" data-close>キャンセル</button><button type="submit" class="btn primary">保存</button></div>
+  </form>`);
+  const form = $('#profForm', sheet);
+  $$('input[name=theme]', form).forEach(r => r.onchange = () => document.documentElement.setAttribute('data-accent', r.value));
+  const orig = d.theme;
+  let saved = false;
+  $('.overlay')._onClose = () => { if (!saved) document.documentElement.setAttribute('data-accent', orig); };
+  form.onsubmit = e => {
+    e.preventDefault(); saved = true;
+    d.title = $('#pTitle', form).value.trim() || `${S.account} 取引リスト`;
+    d.profile = $('#pProf', form).value.replace(/\s+$/, '');
+    d.theme = $('input[name=theme]:checked', form).value;
+    closeModal(); afterChange(); toast('保存しました（未公開）');
+  };
+}
+
+/* ===== ログイン ===== */
+function openLogin() {
+  const sheet = openModal('管理者ログイン', `<form class="sheet-body form" id="loginForm">
+    <div class="note-box">このサイトの持ち主専用です。GitHub の「Personal access token」でログインします。
+      <ol><li>GitHub → Settings → Developer settings → Fine-grained tokens</li>
+      <li>Repository access で <b>${esc(CONFIG.owner)}/${esc(CONFIG.repo)}</b> のみを選択</li>
+      <li>Permissions → Contents を <b>Read and write</b> にして発行</li></ol>
+      トークンはこの端末のブラウザにのみ保存されます。</div>
+    <div class="f"><label class="lb" for="tok">アクセストークン</label><input class="field-in" id="tok" type="password" autocomplete="off" placeholder="github_pat_..." required></div>
+    <p class="err" id="lErr" hidden></p>
+    <div class="form-foot"><button type="button" class="btn" data-close>キャンセル</button><button type="submit" class="btn primary" id="lBtn">ログイン</button></div>
+  </form>`);
+  const form = $('#loginForm', sheet);
+  form.onsubmit = async e => {
+    e.preventDefault();
+    const err = $('#lErr', form); err.hidden = true;
+    S.token = $('#tok', form).value.trim();
+    if (!S.token) return;
+    $('#lBtn', form).disabled = true; $('#lBtn', form).textContent = '確認中…';
+    try {
+      await verifyToken();
+      if (!S.canPush) throw new Error('このリポジトリへの書き込み権限がありません');
+      store.set('gh_token', S.token);
+      closeModal();
+      const d = await loadData().catch(() => null);
+      S.data = d || S.data || normalizeData({});
+      if (!isOwner()) toast(`${S.user} さんはこのページの管理者ではありません`, 4000);
+      else toast(`ログインしました：${S.user}`);
+      renderAll();
+    } catch (ex) {
+      S.token = ''; S.user = ''; S.canPush = false;
+      err.textContent = ex.status === 401 ? 'トークンが正しくありません' : (ex.message || 'ログインに失敗しました');
+      err.hidden = false;
+      $('#lBtn', form).disabled = false; $('#lBtn', form).textContent = 'ログイン';
+    }
+  };
+  setTimeout(() => $('#tok', form).focus(), 50);
+}
+function logout() {
+  if (isDirty() && !confirm('未公開の変更があります。破棄してログアウトしますか？')) return;
+  if (!S.admin && !confirm('ログアウトしますか？')) return;
+  store.set('gh_token', null);
+  S.token = ''; S.user = ''; S.canPush = false; S.admin = false; S.draft = null; S.pending.clear();
+  renderAll(); toast('ログアウトしました');
+}
+
+/* ===== 公開（GitHub にコミット） ===== */
+async function publish() {
+  if (!isDirty()) return;
+  const btn = $('#publishBtn'); btn.disabled = true; btn.textContent = '公開中…';
+  toast('公開しています…', 0);
+  try {
+    // 他の端末で更新されていないか確認
+    let remoteSha = null;
+    try { remoteSha = (await gh(`${repoPath()}/contents/${dataPath()}?ref=${encodeURIComponent(S.branch)}&t=${Date.now()}`)).sha; } catch (e) { if (e.status !== 404) throw e; }
+    if (remoteSha !== S.fileSha && !confirm('別の端末で更新された可能性があります。このまま上書きしますか？')) throw new Error('キャンセルしました');
+
+    const draft = clone(S.draft);
+    const ref = await gh(`${repoPath()}/git/ref/heads/${encodeURIComponent(S.branch)}`);
+    const baseCommit = await gh(`${repoPath()}/git/commits/${ref.object.sha}`);
+    const tree = [];
+    const uploaded = new Map(); // pending key -> path
+    // 新しい画像をアップロード
+    for (const it of draft.items) {
+      if (!it.image || !it.image.startsWith('pending:')) continue;
+      if (!uploaded.has(it.image)) {
+        const dataURL = S.pending.get(it.image);
+        if (!dataURL) { it.image = ''; continue; }
+        const path = `${CONFIG.imageDir}/${S.account}/${uid()}.jpg`;
+        const blob = await gh(`${repoPath()}/git/blobs`, { method: 'POST', body: JSON.stringify({ content: dataURL.split(',')[1], encoding: 'base64' }) });
+        tree.push({ path, mode: '100644', type: 'blob', sha: blob.sha });
+        uploaded.set(it.image, path);
+      }
+      it.image = uploaded.get(it.image);
+    }
+    // 使われなくなった画像を削除
+    const used = new Set(draft.items.map(i => i.image).filter(Boolean));
+    const prefix = `${CONFIG.imageDir}/${S.account}/`;
+    const old = new Set(S.data.items.map(i => i.image).filter(p => p && p.startsWith(prefix)));
+    old.forEach(p => { if (!used.has(p)) tree.push({ path: p, mode: '100644', type: 'blob', sha: null }); });
+    // データ
+    tree.push({ path: dataPath(), mode: '100644', type: 'blob', content: JSON.stringify(draft, null, 2) + '\n' });
+
+    const newTree = await gh(`${repoPath()}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: baseCommit.tree.sha, tree }) });
+    const commit = await gh(`${repoPath()}/git/commits`, { method: 'POST', body: JSON.stringify({ message: `Update ${S.account} (${today()})`, tree: newTree.sha, parents: [ref.object.sha] }) });
+    await gh(`${repoPath()}/git/refs/heads/${encodeURIComponent(S.branch)}`, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha }) });
+
+    uploaded.forEach((path, key) => S.imgCache.set(path, S.pending.get(key)));
+    S.pending.clear();
+    const f = await gh(`${repoPath()}/contents/${dataPath()}?ref=${commit.sha}`);
+    S.fileSha = f.sha;
+    S.data = draft; S.draft = clone(draft);
+    renderAll();
+    toast('公開しました。サイトへの反映まで1〜2分かかります', 4500);
+  } catch (e) {
+    console.error(e);
+    toast(e.message === 'キャンセルしました' ? e.message : `公開に失敗しました：${e.detail || e.message}`, 5000);
+    renderPubBar();
+  }
+}
+
+init();
+</script>
+</body>
+</html>
