@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
 <title>取引リスト</title>
+<link rel="icon" type="image/png" href="../images/trade-list-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
@@ -680,12 +681,67 @@ function renderList() {
   empty.hidden = list.length > 0;
   empty.textContent = total === 0 ? (S.admin ? '「＋ グッズを追加」から登録できます' : 'まだ登録がありません') : '条件に合うグッズがありません';
   $$('.card', el).forEach(c => {
-    const open = () => openDetail(c.dataset.id);
-    c.onclick = e => { if (e.target.closest('[data-q]')) return; if(S.selectionMode&&S.tab==='give'){const id=c.dataset.id;if(S.selectedGoods.has(id))S.selectedGoods.delete(id);else{const q=Number(prompt('選択する個数','1'));if(q>0)S.selectedGoods.set(id,Math.min(q,Number(findItem(id).qty)||q));}renderList();return;} open(); };
-    c.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } };
+    const id = c.dataset.id;
+    const open = () => {
+      if (S.selectionMode && S.tab === 'give') {
+        if (S.selectedGoods.delete(id)) renderList();
+        else openSelectionQuantity(findItem(id), c);
+        return;
+      }
+      openDetail(id);
+    };
+    c.onclick = e => { if (!e.target.closest('[data-q]')) open(); };
+    c.onkeydown = e => {
+      if (e.target !== c || (e.key !== 'Enter' && e.key !== ' ')) return;
+      e.preventDefault();
+      open();
+    };
     $$('[data-q]', c).forEach(b => b.onclick = e => { e.stopPropagation(); changeQty(c.dataset.id, +b.dataset.q); });
   });
   renderSelectionBar();
+}
+
+function openSelectionQuantity(item, card) {
+  const max = Math.floor(item.qty);
+  if (max < 1) return;
+  const sheet = openModal('選択する個数', `
+    <form class="sheet-body">
+      <p>${esc(item.name)}（在庫：${max}個）</p>
+      <div class="stepper">
+        <button type="button" data-step="-1" aria-label="個数を減らす">−</button>
+        <input class="field-in" type="text" inputmode="numeric" value="1" aria-label="個数">
+        <button type="button" data-step="1" aria-label="個数を増やす">＋</button>
+      </div>
+      <div class="form-foot">
+        <button class="btn" type="button" data-close>キャンセル</button>
+        <button class="btn primary" type="submit">選択する</button>
+      </div>
+    </form>`, { onClose: () => card.focus() });
+  const input = $('input', sheet);
+  const [decrease, increase] = $$('[data-step]', sheet);
+  const quantity = () => {
+    const value = input.value.trim().replace(/[０-９]/g, digit => String(digit.charCodeAt(0) - 0xFF10));
+    return /^\d+$/.test(value) ? Math.min(max, Math.max(1, Number(value))) : 1;
+  };
+  const updateButtons = () => {
+    const value = quantity();
+    decrease.disabled = value <= 1;
+    increase.disabled = value >= max;
+  };
+  input.oninput = updateButtons;
+  [decrease, increase].forEach(button => button.onclick = () => {
+    input.value = Math.min(max, Math.max(1, quantity() + Number(button.dataset.step)));
+    updateButtons();
+  });
+  $('form', sheet).onsubmit = event => {
+    event.preventDefault();
+    S.selectedGoods.set(item.id, quantity());
+    closeModal();
+    renderList();
+    $$('.card', $('#list')).find(next => next.dataset.id === item.id)?.focus();
+  };
+  updateButtons();
+  $('[data-close]', sheet).focus();
 }
 
 function renderSelectionBar(){const bar=$('#selectionBar');if(!bar)return;bar.hidden=!S.selectionMode;document.body.classList.toggle('has-selection',S.selectionMode);if(!S.selectionMode){bar.innerHTML='';return}const n=S.selectedGoods.size;bar.innerHTML='<div class="selection-inner"><div class="summary">選択：'+n+'種類</div><button class="btn" id="selClear" '+(!n?'disabled':'')+'>クリア</button><button class="btn primary" id="selDone" '+(!n?'disabled':'')+'>決定</button></div>';$('#selClear').onclick=()=>{S.selectedGoods.clear();renderList()};$('#selDone').onclick=selectionResult}
