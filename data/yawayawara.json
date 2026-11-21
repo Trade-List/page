@@ -6,6 +6,30 @@
   "admins": [],
   "items": [
     {
+      "id": "mwqlfkdimc3p9",
+      "type": "give",
+      "image": "images/yawayawara/mwqlg7mi8am2p.jpg",
+      "name": "カードフォリオ 鷹富士茄子 BCGR",
+      "works": [
+        "アイドルマスターシンデレラガールズ"
+      ],
+      "chars": [
+        "鷹富士茄子"
+      ],
+      "kind": "カードフォリオ",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-21",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-22",
+      "updated": "2026-11-22"
+    },
+    {
       "type": "want",
       "method": "both",
       "status": "open",
