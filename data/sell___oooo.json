@@ -1397,15 +1397,15 @@
     {
       "id": "mwht3llf",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・通常",
+      "image": "images/sell___oooo/mws76q2wf40fd.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・通常",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "シピ"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 500,
       "qty": 1,
@@ -1413,23 +1413,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭 GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwht2h82",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・通常",
+      "image": "images/sell___oooo/mws76qppzr5yg.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・通常",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "ククルシカ"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 400,
       "qty": 2,
@@ -1437,23 +1437,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭 GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhszpde",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・グノ顔",
+      "image": "images/sell___oooo/mws76r9kp7a6u.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・グノ顔",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "シピ"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 500,
       "qty": 1,
@@ -1461,23 +1461,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhsyzdc",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・グノ顔",
+      "image": "images/sell___oooo/mws76roukl9w9.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・グノ顔",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "オトメ"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 400,
       "qty": 1,
@@ -1485,23 +1485,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhsyavk",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・グノ顔",
+      "image": "images/sell___oooo/mws76s4ul2t1a.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・グノ顔",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "コメット"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 400,
       "qty": 1,
@@ -1509,23 +1509,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhswvg0",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・グノ顔",
+      "image": "images/sell___oooo/mws76slxo03j7.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・グノ顔",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "SQ"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 400,
       "qty": 1,
@@ -1533,15 +1533,15 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhidwgj",
       "type": "give",
-      "image": "",
+      "image": "images/sell___oooo/mws76t8qf5awl.jpg",
       "name": "東京タワーコラボ 四角マグネット",
       "works": [
         "グノーシア"
@@ -1549,7 +1549,7 @@
       "chars": [
         "夕里子"
       ],
-      "kind": "",
+      "kind": "マグネット",
       "priority": "",
       "price": 550,
       "qty": 1,
@@ -1557,15 +1557,15 @@
       "status": "open",
       "wish": "",
       "release": "2026-11-06",
-      "note": "~2026/11/29\n",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhidf3d",
       "type": "give",
-      "image": "",
+      "image": "images/sell___oooo/mws76tmvvuzki.jpg",
       "name": "東京タワーコラボ 四角マグネット",
       "works": [
         "グノーシア"
@@ -1573,7 +1573,7 @@
       "chars": [
         "しげみち"
       ],
-      "kind": "",
+      "kind": "マグネット",
       "priority": "",
       "price": 550,
       "qty": 2,
@@ -1581,15 +1581,15 @@
       "status": "open",
       "wish": "",
       "release": "2026-11-06",
-      "note": "~2026/11/29\n",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhickmk",
       "type": "give",
-      "image": "",
+      "image": "images/sell___oooo/mws76u13zhd9z.jpg",
       "name": "東京タワーコラボ 四角マグネット",
       "works": [
         "グノーシア"
@@ -1597,7 +1597,7 @@
       "chars": [
         "シピ"
       ],
-      "kind": "",
+      "kind": "マグネット",
       "priority": "",
       "price": 550,
       "qty": 1,
@@ -1605,15 +1605,15 @@
       "status": "open",
       "wish": "",
       "release": "2026-11-06",
-      "note": "~2026/11/29\n",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhic0tl",
       "type": "give",
-      "image": "",
+      "image": "images/sell___oooo/mws76ufci6zsk.jpg",
       "name": "東京タワーコラボ 四角マグネット",
       "works": [
         "グノーシア"
@@ -1629,15 +1629,15 @@
       "status": "open",
       "wish": "",
       "release": "2026-11-06",
-      "note": "~2026/11/29\n",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhibd81",
       "type": "give",
-      "image": "",
+      "image": "images/sell___oooo/mws76uz8frxi1.jpg",
       "name": "東京タワーコラボ 四角マグネット",
       "works": [
         "グノーシア"
@@ -1653,23 +1653,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-11-06",
-      "note": "~2026/11/29\n",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhi71g0",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）おなまえアクリルプレートバッジ",
+      "image": "images/sell___oooo/mws76vdg7ddfs.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）おなまえアクリルプレートバッジ",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "SQ"
       ],
-      "kind": "",
+      "kind": "アクリルバッジ",
       "priority": "",
       "price": 815,
       "qty": 1,
@@ -1677,23 +1677,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾\n",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhi5hzy",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）アクリルプレート",
+      "image": "images/sell___oooo/mws76vuj7cpj1.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）アクリルプレート",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "夕里子"
       ],
-      "kind": "",
+      "kind": "アクリルカード",
       "priority": "",
       "price": 710,
       "qty": 1,
@@ -1701,23 +1701,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhi2uj3",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）アクリルプレート",
+      "image": "images/sell___oooo/mws76wbkfecfp.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）アクリルプレート",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "ステラ"
       ],
-      "kind": "",
+      "kind": "アクリルカード",
       "priority": "",
       "price": 710,
       "qty": 1,
@@ -1725,23 +1725,23 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhi23gn",
       "type": "give",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）アクリルプレート",
+      "image": "images/sell___oooo/mws76wsplygwa.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）アクリルプレート",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "SQ"
       ],
-      "kind": "",
+      "kind": "アクリルカード",
       "priority": "",
       "price": 710,
       "qty": 1,
@@ -1749,10 +1749,10 @@
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhhkay4",
