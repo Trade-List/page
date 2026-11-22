@@ -242,16 +242,16 @@
       ],
       "kind": "カード",
       "priority": "★☆☆",
-      "price": 500,
+      "price": "",
       "qty": 1,
-      "method": "both",
+      "method": "exchange",
       "status": "open",
       "wish": "",
       "release": "2026-06-16",
       "note": "コレクション用にあと3枚求めております",
       "hidden": false,
       "created": "2026-11-22",
-      "updated": "2026-11-22"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwqncqz6zx5oz",
@@ -1757,7 +1757,7 @@
     {
       "id": "mwhhkay4",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6jxd1joiw8.jpg",
       "name": "ナンジャタウンコラボ 船員証風ネームバッジ",
       "works": [
         "グノーシア"
@@ -1765,23 +1765,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルバッジ",
+      "priority": "★★☆",
       "price": 900,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-04-17",
-      "note": "~2026/5/31\n\n▼優先度\n★★★\nオープン商品ですが、迷子がいれば\n",
+      "note": "オープン商品ですが、迷子がいれば",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhhi1pq",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6jy2uv36vx.jpg",
       "name": "ナンジャタウンコラボ C賞イラストシート",
       "works": [
         "グノーシア"
@@ -1789,23 +1789,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "カード",
+      "priority": "★★★",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-04-17",
-      "note": "~2026/5/31\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "無限回収しております。",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhhd9kf",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6jymr5fu7x.jpg",
       "name": "東京タワーコラボ 四角マグネット",
       "works": [
         "グノーシア"
@@ -1813,47 +1813,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "マグネット",
+      "priority": "★★★",
       "price": 550,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-11-06",
-      "note": "~2026/11/29\n\n▼優先度\n★★★\n強く求めております、無限回収しております。",
+      "note": "強く求めております、無限回収しております。",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
-    },
-    {
-      "id": "mwhh788s",
-      "type": "want",
-      "image": "",
-      "name": "ファボテリア Vol.2 アクリルスタンド",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [
-        "ジョナス"
-      ],
-      "kind": "",
-      "priority": "",
-      "price": 500,
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-11-05",
-      "note": "~2026/11/30\n\n▼優先度\n★☆☆",
-      "hidden": true,
-      "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhh5uek",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6jz0olisqq.jpg",
       "name": "ファボテリア Vol.2 ノベルティ",
       "works": [
         "グノーシア"
@@ -1861,23 +1837,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
-      "price": 400,
+      "kind": "カード",
+      "priority": "★★☆",
+      "price": "",
       "qty": 1,
-      "method": "both",
+      "method": "exchange",
       "status": "open",
       "wish": "",
       "release": "2026-11-05",
-      "note": "~2026/11/30\n\n▼優先度\n★★☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhh4j69",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6jzmea2lvn.jpg",
       "name": "ファボテリア Vol.2 アクリルスタンド",
       "works": [
         "グノーシア"
@@ -1885,23 +1861,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
-      "price": 900,
+      "kind": "アクリルスタンド",
+      "priority": "★☆☆",
+      "price": 800,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-11-05",
-      "note": "~2026/11/30\n\n▼優先度\n★☆☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhgzhnc",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k07nr02fc.jpg",
       "name": "カラオケの鉄人 ルームキー風カード",
       "works": [
         "グノーシア"
@@ -1909,23 +1885,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "カード",
+      "priority": "★★★",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-03-05",
-      "note": "~2026/4/19\n\n▼優先度\n★★★\nコレクション用にあと2枚、強く求めております",
+      "note": "コレクション用にあと2枚、強く求めております",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhgw3pb",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k0rivntyu.jpg",
       "name": "カラオケの鉄人 缶バッジ・グノ顔",
       "works": [
         "グノーシア"
@@ -1933,23 +1909,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★☆☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-03-05",
-      "note": "~2026/4/19\n\n▼優先度\n★★☆\n優先度は高くないですが、回収しております",
+      "note": "優先度は高くないですが、回収しております",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwhgveym",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k1bfecku5.jpg",
       "name": "カラオケの鉄人 缶バッジ・通常",
       "works": [
         "グノーシア"
@@ -1957,23 +1933,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★☆☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-03-05",
-      "note": "~2026/4/19\n\n▼優先度\n★★☆\n優先度は高くないですが、回収しております",
+      "note": "優先度は高くないですが、回収しております",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-15"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgt1du3",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k1sk4isqo.jpg",
       "name": "グラフアートコラボ 第2弾（ダイナー）コースター",
       "works": [
         "グノーシア"
@@ -1982,22 +1958,22 @@
         "ジョナス"
       ],
       "kind": "",
-      "priority": "",
+      "priority": "★★★",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2021-09-28",
-      "note": "〜2021/10/20\neeo Cafe コラボカフェ第1弾\n\n▼優先度\n★★★",
+      "note": "GraffArt\neeo Cafe コラボカフェ第1弾\n\n無限回収しております",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgszkcv",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k2faor755.jpg",
       "name": "グラフアートコラボ 第2弾（ダイナー）アクリルスタンド",
       "works": [
         "グノーシア"
@@ -2005,23 +1981,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★★☆",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2021-09-28",
-      "note": "〜2021/10/20\neeo Cafe コラボカフェ第1弾\n\n▼優先度\n★★☆",
+      "note": "eeo Cafe コラボカフェ第1弾",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgswk5a",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k2xt4k8x4.jpg",
       "name": "グラフアートコラボ 第2弾（ダイナー）缶バッジ",
       "works": [
         "グノーシア"
@@ -2029,23 +2005,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★★★",
       "price": 550,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2021-09-28",
-      "note": "〜2021/10/20\neeo Cafe コラボカフェ第1弾\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "GraffArt\neeo Cafe コラボカフェ第1弾\n\n無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgssuz9",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k3j3dh3j9.jpg",
       "name": "まねきねこ コースター",
       "works": [
         "グノーシア"
@@ -2053,23 +2029,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
-      "price": 400,
+      "kind": "コースター",
+      "priority": "★☆☆",
+      "price": "",
       "qty": 1,
-      "method": "both",
+      "method": "exchange",
       "status": "open",
       "wish": "",
       "release": "2026-01-15",
-      "note": "~2026/3/1\n\n▼優先度\n★☆☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgsrcul",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k42zhhvir.jpg",
       "name": "まねきねこ 缶バッジ",
       "works": [
         "グノーシア"
@@ -2077,23 +2053,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★★★",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-01-15",
-      "note": "~2026/3/1\n\n▼優先度\n★★★",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgsqguu",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k4k26ogqb.jpg",
       "name": "まねきねこ アクリルキーホルダー",
       "works": [
         "グノーシア"
@@ -2101,23 +2077,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルキーホルダー",
+      "priority": "★★★",
       "price": 800,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-01-15",
-      "note": "~2026/3/1\n\n▼優先度\n★★★",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgsmslx",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k4yayl7d0.jpg",
       "name": "コラボカフェ本舗 LOOP1 アクリルスタンド",
       "works": [
         "グノーシア"
@@ -2125,23 +2101,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルスタンド",
+      "priority": "★☆☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2025-12-19",
-      "note": "〜2026/1/25\n\n▼優先度\n★☆☆\n希望数集まっているため、価格低めに設定しております",
+      "note": "希望数集まっているため、価格低めに設定しております",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgsjxrp",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k5j6lxj22.jpg",
       "name": "コラボカフェ本舗 LOOP1 コースター",
       "works": [
         "グノーシア"
@@ -2149,23 +2125,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
-      "price": 400,
+      "kind": "コースター",
+      "priority": "★☆☆",
+      "price": "",
       "qty": 1,
-      "method": "both",
+      "method": "exchange",
       "status": "open",
       "wish": "",
       "release": "2025-12-19",
-      "note": "〜2026/1/25\nドリンク特典\n\n▼優先度\n★☆☆",
+      "note": "ドリンク得点",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgs8w9n",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k5z7wojsf.jpg",
       "name": "ホビーストック　インスタントフォト風ステッカー",
       "works": [
         "グノーシア"
@@ -2173,23 +2149,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ステッカー",
+      "priority": "★★☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-02-01",
-      "note": "2026年2月発売\n\n▼優先度\n★★☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgs24kx",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k6di7ti4r.jpg",
       "name": "GNOSIA STORE 5th Anniversary​ ステッカー",
       "works": [
         "グノーシア"
@@ -2197,23 +2173,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ステッカー",
+      "priority": "★★★",
       "price": 200,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-11-29",
-      "note": "~2024/12/15\n渋谷PARCO グノーシア発売5周年記念ポップアップ\n\n▼優先度\n★★★\n無限回収しております",
+      "note": "渋谷PARCO グノーシア発売5周年記念ポップアップ\n\n無限回収しております",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgrycpw",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k6v0lapx8.jpg",
       "name": "GNOSIA STORE 5th Anniversary​ レンチキュラーカード",
       "works": [
         "グノーシア"
@@ -2221,23 +2197,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "カード",
+      "priority": "★★★",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-11-29",
-      "note": "~2024/12/15\n渋谷PARCO グノーシア発売5周年記念ポップアップ\n\n▼優先度\n★★★\n無限回収しております",
+      "note": "渋谷PARCO グノーシア発売5周年記念ポップアップ\n\n無限回収しております",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgrsbls",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k7bnupbin.jpg",
       "name": "京まふ 缶バッジ・等身",
       "works": [
         "グノーシア"
@@ -2245,95 +2221,95 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★★☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2025-09-22",
-      "note": "~2025/10/5\n京まふ2025\n\n▼優先度\n★★☆",
+      "note": "京まふ2025",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgrkfql",
       "type": "want",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）アクリルプレート",
+      "image": "images/sell___oooo/mws6k7ptoejwr.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）アクリルプレート",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルカード",
+      "priority": "★★☆",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾\n\n▼優先度\n★★☆",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgrftxr",
       "type": "want",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）おなまえアクリルプレートバッジ",
+      "image": "images/sell___oooo/mws6k8380vpgo.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）おなまえアクリルプレートバッジ",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルバッジ",
+      "priority": "★★☆",
       "price": 800,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾\n\n▼優先度\n★★☆",
+      "note": "文化祭　GraffArt\neeo Cafe コラボカフェ第4弾",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgrel8u",
       "type": "want",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・グノ顔",
+      "image": "images/sell___oooo/mws6k8h1izocj.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・グノ顔",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★☆☆",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾\n\n▼優先度\n★☆☆\n希望数集まっておりますので、安価な設定となっております。",
+      "note": "文化祭 GraffArt\neeo Cafe コラボカフェ第4弾\n\n希望数集まっておりますので、安価な設定となっております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgr3m47",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k927y8ngq.jpg",
       "name": "キャラ印.com 缶バッジ",
       "works": [
         "グノーシア"
@@ -2341,23 +2317,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★★☆",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2025-10-15",
-      "note": "駿河屋 先行販売\n▼優先度\n★★☆\nオープン商品ですが、迷子がいれば",
+      "note": "学園、学生服\nオープン商品ですが、迷子がいれば",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqwbfy",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6k9nomdbrx.jpg",
       "name": "グラフアートコラボ 第4弾（宇宙警察）缶バッジ２個セット",
       "works": [
         "グノーシア"
@@ -2365,23 +2341,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★☆☆",
       "price": 1100,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-09-13",
-      "note": "～2023/10/6\n\n▼優先度\n★☆☆\nオープン商品ですので、もし迷子がいれば",
+      "note": "オープン商品ですので、もし迷子がいれば",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqurmp",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6ka62sd7y6.jpg",
       "name": "グラフアートコラボ 第4弾（宇宙警察）アクリルスタンド",
       "works": [
         "グノーシア"
@@ -2389,23 +2365,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルスタンド",
+      "priority": "★☆☆",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-09-13",
-      "note": "～2023/10/6\n\n▼優先度\n★☆☆",
+      "note": "GraffArt\neeo store",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqsuqb",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kan3xx8f0.jpg",
       "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・グノ顔",
       "works": [
         "グノーシア"
@@ -2413,23 +2389,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★☆☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-09-13",
-      "note": "～2023/10/6\n\n▼優先度\n★★☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqjouc",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kbfk8qw5n.jpg",
       "name": "グラフアートコラボ 第3弾（夏祭り）コースター・グノ顔",
       "works": [
         "グノーシア"
@@ -2437,7 +2413,7 @@
       "chars": [
         "ステラ"
       ],
-      "kind": "",
+      "kind": "コースター",
       "priority": "",
       "price": 700,
       "qty": 1,
@@ -2445,15 +2421,15 @@
       "status": "open",
       "wish": "",
       "release": "2022-09-03",
-      "note": "〜2022/9/30\n\n▼優先度\n★★★\nコレクション用に1枚のみ求めております。",
+      "note": "コレクション用に1枚のみ求めております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqinih",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kc54q3be0.jpg",
       "name": "グラフアートコラボ 第3弾（夏祭り）コースター・通常",
       "works": [
         "グノーシア"
@@ -2462,22 +2438,22 @@
         "ステラ"
       ],
       "kind": "",
-      "priority": "",
+      "priority": "★★★",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2022-09-03",
-      "note": "〜2022/9/30\n\n▼優先度\n★★★\nコレクション用に1枚のみ求めております。",
+      "note": "コレクション用に1枚のみ求めております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqhdnb",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kcp274m4k.jpg",
       "name": "グラフアートコラボ 第3弾（夏祭り）コースター・グノ顔",
       "works": [
         "グノーシア"
@@ -2485,23 +2461,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★★★",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2022-09-03",
-      "note": "〜2022/9/30\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqgg4s",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kd5adp4mj.jpg",
       "name": "グラフアートコラボ 第3弾（夏祭り）コースター・通常",
       "works": [
         "グノーシア"
@@ -2509,23 +2485,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★★★",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2022-09-03",
-      "note": "〜2022/9/30\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgqeqy3",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kdkdmh9nt.jpg",
       "name": "グラフアートコラボ 第3弾（夏祭り）アクリルキーホルダー",
       "works": [
         "グノーシア"
@@ -2533,23 +2509,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "アクリルキーホルダー",
+      "priority": "★☆☆",
       "price": 700,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2022-09-03",
-      "note": "〜2022/9/30\n\n▼優先度\n★☆☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgq2ujp",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kgbxvvsf8.jpg",
       "name": "ヴィレッジヴァンガード 第1弾 スクエア缶バッジ",
       "works": [
         "グノーシア"
@@ -2558,22 +2534,22 @@
         "ジョナス"
       ],
       "kind": "",
-      "priority": "",
+      "priority": "★★★",
       "price": 660,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2020-12-17",
-      "note": "受注販売〜2021/1/4\n2023/9 再販あり\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "mwgprey1",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kgq5jn6fo.jpg",
       "name": "ローソンプリント ブロマイド＆ステッカー 第2弾",
       "works": [
         "グノーシア"
@@ -2587,18 +2563,18 @@
         "レムナン",
         "シピ"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ブロマイド,ステッカー",
+      "priority": "★★☆",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-02-06",
-      "note": "販売期間〜2024/3/31\n大きさやステッカーかどうかは問いません\n定価換算で買取・交換が可能です。\n\n▼優先度\n★★☆",
+      "note": "大きさやステッカーかどうかは問いません\n定価換算で買取・交換が可能です。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn01",
@@ -2625,53 +2601,31 @@
     {
       "id": "gn02",
       "type": "want",
-      "image": "",
-      "name": "グラフアートコラボ 第5弾（文化祭）コースター・通常",
+      "image": "images/sell___oooo/mws6kh5a3hhmd.jpg",
+      "name": "グラフアートコラボ 第5弾（学園祭）コースター・通常",
       "works": [
         "グノーシア"
       ],
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★☆☆",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-09-19",
-      "note": "〜2026/10/8\neeo Cafe コラボカフェ第4弾\n\n▼優先度\n★☆☆\n希望数集まっておりますので、安価な設定となっております。",
+      "note": "希望数集まっておりますので、安価な設定となっております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
-    },
-    {
-      "id": "gn03",
-      "type": "want",
-      "image": "",
-      "name": "クリニックストア（東京・大阪）",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [],
-      "kind": "",
-      "priority": "",
-      "price": "",
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-04-24",
-      "note": "〜2026/5/31\n※調査による情報。公式で要確認",
-      "hidden": true,
-      "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn04",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kho9f2ydk.jpg",
       "name": "GEO 缶バッジ",
       "works": [
         "グノーシア"
@@ -2679,23 +2633,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★★★",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-03-17",
-      "note": "〜2026/4/12\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn05",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6ki5bjiki5.jpg",
       "name": "コラボカフェ本舗 LOOP1 L版ブロマイド",
       "works": [
         "グノーシア"
@@ -2704,22 +2658,22 @@
         "ジョナス"
       ],
       "kind": "",
-      "priority": "",
+      "priority": "★★★",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2025-12-19",
-      "note": "〜2026/1/25\nフード・デザート特典\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "フード・デザート特典\n\n無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn06",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kijjooq42.jpg",
       "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・通常",
       "works": [
         "グノーシア"
@@ -2727,23 +2681,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "コースター",
+      "priority": "★☆☆",
       "price": 500,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-09-13",
-      "note": "～2023/10/6\n\n▼優先度\n★☆☆",
+      "note": "",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn07",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kjc03kwjf.jpg",
       "name": "グラフアートコラボ 第3弾（夏祭り）缶バッジ＆缶バデコカバー",
       "works": [
         "グノーシア"
@@ -2751,18 +2705,18 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★★★",
       "price": 1100,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2022-09-03",
-      "note": "〜2022/9/30\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn08",
@@ -2787,31 +2741,9 @@
       "updated": "2026-11-15"
     },
     {
-      "id": "gn09",
-      "type": "want",
-      "image": "",
-      "name": "クリニック（白衣）デザイン新作グッズ",
-      "works": [
-        "グノーシア"
-      ],
-      "chars": [],
-      "kind": "",
-      "priority": "",
-      "price": "",
-      "qty": 1,
-      "method": "both",
-      "status": "open",
-      "wish": "",
-      "release": "2026-09-01",
-      "note": "2026年9月一般発売。日にちは未確認のため1日で仮入力\n※調査による情報。公式で要確認",
-      "hidden": true,
-      "created": "2026-11-14",
-      "updated": "2026-11-14"
-    },
-    {
       "id": "gn11",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kjvxfxcti.jpg",
       "name": "ホビーストック　缶バッジ",
       "works": [
         "グノーシア"
@@ -2819,18 +2751,18 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "缶バッジ",
+      "priority": "★☆☆",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-02-01",
-      "note": "2026年2月発売\n駄菓子缶バッジ\n\n▼優先度\n★☆☆",
+      "note": "\n駄菓子缶バッジ",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn12",
@@ -2901,7 +2833,7 @@
     {
       "id": "gn16",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kkacc4t5v.jpg",
       "name": "キャラ印.com アクリルスタンド",
       "works": [
         "グノーシア"
@@ -2910,17 +2842,17 @@
         "ジョナス"
       ],
       "kind": "",
-      "priority": "",
+      "priority": "★★★",
       "price": 750,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2025-10-15",
-      "note": "駿河屋先行販売\n\n▼優先度\n★★★\nオープン商品ですが、希望数足りていないため",
+      "note": "オープン商品ですが、希望数足りていないため",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn17",
@@ -3087,23 +3019,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ブロマイド",
+      "priority": "★★★",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2024-02-06",
-      "note": "販売期間〜2024/3/31\n大きさやステッカーかどうかは問いません\n定価換算で買取・交換が可能です。\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "大きさやステッカーかどうかは問いません\n定価換算で買取・交換が可能です。\n\n無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn25",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6kkr6qhxo1.jpg",
       "name": "ローソンプリント ブロマイド＆ステッカー 第1弾",
       "works": [
         "グノーシア"
@@ -3112,18 +3044,18 @@
         "ジョナス",
         "夕里子"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ブロマイド,ステッカー",
+      "priority": "★☆☆",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2023-11-07",
-      "note": "~2023/12/28\n\n▼優先度\n★☆☆",
+      "note": "大きさ、ステッカーかどうかは問いません\n定価換算で交換・譲渡可能です",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn26",
@@ -3150,7 +3082,7 @@
     {
       "id": "gn27",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6klb3zcrkl.jpg",
       "name": "ファミマプリント ブロマイド 第2弾（カクテル）",
       "works": [
         "グノーシア"
@@ -3158,23 +3090,23 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ブロマイド,ステッカー",
+      "priority": "★★★",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2021-06-21",
-      "note": "〜2021/9/30。全14種\n大きさやシールかどうかは問いません。\n定価換算で買取・交換可能です。\n\n▼優先度\n★★★\n無限回収しております。",
+      "note": "大きさやシールかどうかは問いません。\n定価換算で買取・交換可能です。\n\n無限回収しております。",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     },
     {
       "id": "gn28",
       "type": "want",
-      "image": "",
+      "image": "images/sell___oooo/mws6klra2525s.jpg",
       "name": "ファミマプリント ブロマイド 第1弾",
       "works": [
         "グノーシア"
@@ -3182,19 +3114,19 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
-      "priority": "",
+      "kind": "ブロマイド",
+      "priority": "★★★",
       "price": 300,
       "qty": 1,
       "method": "both",
       "status": "open",
       "wish": "",
       "release": "2020-12-14",
-      "note": "〜2021/3/31。全14種\n\n▼優先度\n★★★\n無限回収しております",
+      "note": "無限回収しております",
       "hidden": false,
       "created": "2026-11-14",
-      "updated": "2026-11-14"
+      "updated": "2026-11-23"
     }
   ],
-  "updated": "2026-11-22"
+  "updated": "2026-11-23"
 }
