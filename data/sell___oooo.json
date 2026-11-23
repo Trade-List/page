@@ -5,9 +5,81 @@
   "admins": [],
   "items": [
     {
+      "id": "mwtbhcojzbfot",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbhyu6ygykw.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ SD",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtbgzvz94tbs",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbhzgybpwrb.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ SD",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジナ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtbg50zao0x3",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbhzxz7mjdg.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ SD",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ククルシカ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwtbeegqynflc",
       "type": "give",
-      "image": "images/sell___oooo/mwtbetrsuo6vs.jpg",
+      "image": "images/sell___oooo/mwtbi0f2xxlv2.jpg",
       "name": "ファボテリア Vol.2 ノベルティ SD",
       "works": [
         "グノーシア"
@@ -19,7 +91,7 @@
       "priority": "",
       "price": 500,
       "qty": 2,
-      "method": "exchange",
+      "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-11-05",
@@ -43,7 +115,7 @@
       "priority": "",
       "price": "",
       "qty": 2,
-      "method": "exchange",
+      "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-11-05",
@@ -67,7 +139,7 @@
       "priority": "",
       "price": 500,
       "qty": 1,
-      "method": "exchange",
+      "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-11-05",
@@ -91,7 +163,7 @@
       "priority": "",
       "price": 500,
       "qty": 2,
-      "method": "exchange",
+      "method": "both",
       "status": "open",
       "wish": "",
       "release": "2026-11-05",
