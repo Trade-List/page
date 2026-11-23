@@ -5,6 +5,78 @@
   "admins": [],
   "items": [
     {
+      "id": "mwstysfgi3zr2",
+      "type": "give",
+      "image": "images/sell___oooo/mwstzhoewlebx.jpg",
+      "name": "ファボテリア　ノベルティ特典",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2026-06-16",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwstw3j85n5zj",
+      "type": "give",
+      "image": "images/sell___oooo/mwstzi8a7uhu8.jpg",
+      "name": "ホビーストック　缶バッジ",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "レムナン"
+      ],
+      "kind": "缶バッジ",
+      "priority": "",
+      "price": 300,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-01",
+      "note": "駄菓子缶バッジ",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwsttxlconn34",
+      "type": "give",
+      "image": "images/sell___oooo/mwstzipc2mn5b.jpg",
+      "name": "ホビーストック　缶バッジ",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ククルシカ"
+      ],
+      "kind": "缶バッジ",
+      "priority": "",
+      "price": 300,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-01",
+      "note": "駄菓子缶バッジ",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwr50ejus6fy4",
       "type": "give",
       "image": "images/sell___oooo/mwr52vmmzmtx3.jpg",
@@ -1965,7 +2037,7 @@
       "status": "open",
       "wish": "",
       "release": "2021-09-28",
-      "note": "GraffArt\neeo Cafe コラボカフェ第1弾\n\n無限回収しております",
+      "note": "GraffArt 描き下ろし第2弾\neeo Cafe コラボカフェ第1弾\n\n無限回収しております",
       "hidden": false,
       "created": "2026-11-14",
       "updated": "2026-11-23"
@@ -1973,7 +2045,7 @@
     {
       "id": "mwgszkcv",
       "type": "want",
-      "image": "images/sell___oooo/mws6k2faor755.jpg",
+      "image": "images/sell___oooo/mwstzj6fblm26.jpg",
       "name": "グラフアートコラボ 第2弾（ダイナー）アクリルスタンド",
       "works": [
         "グノーシア"
@@ -1989,7 +2061,7 @@
       "status": "open",
       "wish": "",
       "release": "2021-09-28",
-      "note": "eeo Cafe コラボカフェ第1弾",
+      "note": "GraffArt 描き下ろし第2弾\neeo Cafe コラボカフェ第1弾",
       "hidden": false,
       "created": "2026-11-14",
       "updated": "2026-11-23"
