@@ -5,6 +5,246 @@
   "admins": [],
   "items": [
     {
+      "id": "mwtbeegqynflc",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbetrsuo6vs.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ SD",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 2,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtbdqt6d2faz",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbetrsuo6vs.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ 等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "レムナン"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": "",
+      "qty": 2,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "交換対応予定です",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtbd8yo95q55",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbeuhc7poew.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ 等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "交換対応予定です",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb8bun00jn8",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbev6y5p217.jpg",
+      "name": "ファボテリア Vol.2 ノベルティ 等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 2,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-05",
+      "note": "交換対応予定です",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb6s0kgrtzj",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbevphy70v5.jpg",
+      "name": "東京タワーコラボ 購入特典 通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "夕里子"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-06",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb5rwaueewy",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbewggf740c.jpg",
+      "name": "東京タワーコラボ 購入特典 通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-06",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb3se19qsel",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbex3wuuoye.jpg",
+      "name": "東京タワーコラボ 購入特典 通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "沙明"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": "",
+      "qty": 2,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-06",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb2kw8nba9n",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbexn6j801c.jpg",
+      "name": "東京タワーコラボ コラボメニュー注文特典 等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "夕里子"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-06",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb1t2mxel7g",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbey6y2ll45.jpg",
+      "name": "東京タワーコラボ コラボメニュー注文特典 等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ラキオ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-06",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtb0vu5zpnp9",
+      "type": "give",
+      "image": "images/sell___oooo/mwtbeyo1c55i9.jpg",
+      "name": "東京タワーコラボ コラボメニュー注文特典 SD",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-06",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwtaotymendzx",
       "type": "want",
       "image": "images/sell___oooo/mwtaphh7vxylj.jpg",
