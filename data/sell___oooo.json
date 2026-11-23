@@ -5,6 +5,366 @@
   "admins": [],
   "items": [
     {
+      "id": "mwt9prib60dt6",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9ste67r6og.jpg",
+      "name": "COCOLABO 購入特典 ミニステッカー 等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "ステッカー",
+      "priority": "",
+      "price": 800,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-04-24",
+      "note": "クリニック",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9pdfa57x33",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9su4cpfrn7.jpg",
+      "name": "COCOLABO 購入特典 ミニステッカー SD",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "沙明"
+      ],
+      "kind": "ステッカー",
+      "priority": "",
+      "price": 800,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-04-24",
+      "note": "クリニック",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9kewswidbb",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9sumsf08t7.jpg",
+      "name": "でふぉラバ！",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "夕里子"
+      ],
+      "kind": "ラバーチャーム",
+      "priority": "",
+      "price": 300,
+      "qty": 2,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-01-26",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9fr6fk35ih",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9sv7lp9lp9.jpg",
+      "name": "まねきねこ アクリルキーホルダー",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "アクリルキーホルダー",
+      "priority": "",
+      "price": 800,
+      "qty": 2,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-01-15",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9f862f97d9",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9svonvbee9.jpg",
+      "name": "まねきねこ 缶バッジ",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "缶バッジ",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-01-15",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9c1hc6i34t",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9swh3kj21k.jpg",
+      "name": "京まふ 缶バッジ・等身",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "缶バッジ",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-09-22",
+      "note": "京まふ2025",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt99f28rolhp",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9swy57pomg.jpg",
+      "name": "CELEBRATION PARTY in E-DINER アクリルキーホルダー",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "アクリルキーホルダー",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-10-01",
+      "note": "トレーディングカスタムアクリルキーホルダーA（星座ver.）",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt96hyokx4ei",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9sxbvwuw9c.jpg",
+      "name": "CELEBRATION PARTY in E-DINER コースター",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-10-01",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9604rhaqe9",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9sxtfkckob.jpg",
+      "name": "CELEBRATION PARTY in E-DINER コースター",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-10-01",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt8zr5bv95s6",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9syj245ac8.jpg",
+      "name": "コラボカフェ本舗 LOOP2 ノベルティチケット風カード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "レムナン"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 800,
+      "qty": 2,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-07-03",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt8ysjeok80m",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9syy228oj1.jpg",
+      "name": "コラボカフェ本舗 LOOP2 コースター",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-07-03",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt8yjkv9edn9",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9szh7rdtvk.jpg",
+      "name": "コラボカフェ本舗 LOOP2 コースター",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-07-03",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt8tzkqxwcv2",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9szy8617rv.jpg",
+      "name": "まねきねこ コースター",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 300,
+      "qty": 1,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2026-01-15",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt8t35yr7u21",
+      "type": "want",
+      "image": "images/sell___oooo/mwt9t0ci66qxf.jpg",
+      "name": "コラボカフェ本舗 LOOP1 コースター",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ククルシカ"
+      ],
+      "kind": "コースター",
+      "priority": "★☆☆",
+      "price": 500,
+      "qty": 1,
+      "method": "exchange",
+      "status": "open",
+      "wish": "",
+      "release": "2025-12-19",
+      "note": "ドリンク特典",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt8p78lfrt4n",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9t0w3r67kf.jpg",
+      "name": "コラボカフェ本舗 LOOP1 L版ブロマイド",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "ブロマイド",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-12-19",
+      "note": "フード・デザート特典",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwstysfgi3zr2",
       "type": "give",
       "image": "images/sell___oooo/mwstzhoewlebx.jpg",
@@ -2729,7 +3089,7 @@
       "chars": [
         "ジョナス"
       ],
-      "kind": "",
+      "kind": "ブロマイド",
       "priority": "★★★",
       "price": 500,
       "qty": 1,
