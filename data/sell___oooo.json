@@ -5,6 +5,222 @@
   "admins": [],
   "items": [
     {
+      "id": "mwtafdluik3fq",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafvc7wpg5u.jpg",
+      "name": "スナップマイド",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 70,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-05-01",
+      "note": "スナマイ",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtaefftipwjs",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafw5klmvlu.jpg",
+      "name": "スナップマイド",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "レムナン"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 70,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-05-01",
+      "note": "スナマイ",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtadz3gsy2li",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafwvcwy9zz.jpg",
+      "name": "スナップマイド",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "オトメ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 70,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-05-01",
+      "note": "スナマイ",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta9qhw3z39e",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafxrvkefyz.jpg",
+      "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ラキオ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2024-09-13",
+      "note": "GraffArt 描き下ろし第4弾",
+      "hidden": true,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta950n0g5mg",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafyb2inisx.jpg",
+      "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "レムナン"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2024-09-13",
+      "note": "GraffArt 描き下ろし第4弾",
+      "hidden": true,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta8fgacbqlh",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafysuqjxcu.jpg",
+      "name": "ダンスパ　トランプ風カード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "レムナン"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 700,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-11",
+      "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
+      "hidden": true,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta7kov2ak08",
+      "type": "give",
+      "image": "images/sell___oooo/mwtafzjivuqxr.jpg",
+      "name": "ダンスパ　トランプ風カード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ラキオ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 700,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-11",
+      "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
+      "hidden": true,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta6qkcaha08",
+      "type": "give",
+      "image": "images/sell___oooo/mwtag0a6lzm5c.jpg",
+      "name": "ダンスパ　トランプ風カード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "シピ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 700,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-11",
+      "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta4z1il54no",
+      "type": "give",
+      "image": "images/sell___oooo/mwtag0we4nibl.jpg",
+      "name": "ダンスパ　トランプ風カード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ユーリ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 700,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-02-11",
+      "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwta3cpj21oif",
       "type": "give",
       "image": "images/sell___oooo/mwta4682up844.jpg",
