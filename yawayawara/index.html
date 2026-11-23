@@ -677,7 +677,7 @@ function cardHTML(it) {
     <div class="card-body">
       <div class="card-name">${esc(it.name)}</div>
       <div class="card-meta">
-        <span><span class="price">${fmtPrice(it.price) || '—'}</span>${prio ? ` <span class="stars">${prio}</span>` : ''}</span>
+        <span><span class="price">${it.method === 'exchange' ? '交換のみ' : (fmtPrice(it.price) || '—')}</span>${prio ? ` <span class="stars">${prio}</span>` : ''}</span>
         ${give ? statusBadge(it.status) : ''}
       </div>
       ${S.admin && give ? `<div class="qty-ctrl"><button type="button" data-q="-1" aria-label="個数を減らす">−</button><span>${it.qty <= 0 ? '在庫0' : '×' + it.qty}</span><button type="button" data-q="1" aria-label="個数を増やす">＋</button></div>` : ''}
