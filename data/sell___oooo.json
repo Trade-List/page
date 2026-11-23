@@ -5,6 +5,78 @@
   "admins": [],
   "items": [
     {
+      "id": "mwtaotymendzx",
+      "type": "want",
+      "image": "images/sell___oooo/mwtaphh7vxylj.jpg",
+      "name": "Happyくじ オーナメントくじ2026 ミゲル",
+      "works": [
+        "ディズニー"
+      ],
+      "chars": [
+        "ゼロ"
+      ],
+      "kind": "フィギュア",
+      "priority": "★★★",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-07",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtaocrbmowea",
+      "type": "want",
+      "image": "images/sell___oooo/mwtapi28kp2l3.jpg",
+      "name": "Happyくじ オーナメントくじ2026 ミゲル",
+      "works": [
+        "ディズニー"
+      ],
+      "chars": [
+        "ジャック・スケリントン"
+      ],
+      "kind": "フィギュア",
+      "priority": "★★★",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-07",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtao8vash2en",
+      "type": "want",
+      "image": "images/sell___oooo/mwtapinjpue9e.jpg",
+      "name": "Happyくじ オーナメントくじ2026 ミゲル",
+      "works": [
+        "ディズニー"
+      ],
+      "chars": [
+        "ミゲル"
+      ],
+      "kind": "フィギュア",
+      "priority": "★★★",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2026-11-07",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwtafdluik3fq",
       "type": "give",
       "image": "images/sell___oooo/mwtafvc7wpg5u.jpg",
