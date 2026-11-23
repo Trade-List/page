@@ -5,6 +5,78 @@
   "admins": [],
   "items": [
     {
+      "id": "mwta3cpj21oif",
+      "type": "give",
+      "image": "images/sell___oooo/mwta4682up844.jpg",
+      "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジナ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2024-09-13",
+      "note": "GraffArt 描き下ろし第4弾",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwta2lfw2vz39",
+      "type": "give",
+      "image": "images/sell___oooo/mwta46p1emjvy.jpg",
+      "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "SQ"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2024-09-13",
+      "note": "GraffArt 描き下ろし第4弾",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9ze34vn7qk",
+      "type": "give",
+      "image": "images/sell___oooo/mwta4762ku97c.jpg",
+      "name": "グラフアートコラボ 第4弾（宇宙警察）コースター・通常",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット"
+      ],
+      "kind": "コースター",
+      "priority": "",
+      "price": 500,
+      "qty": 2,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2024-09-13",
+      "note": "GraffArt 描き下ろし第4弾",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwt9xlppjviwo",
       "type": "give",
       "image": "images/sell___oooo/mwt9yrdajiw0a.jpg",
