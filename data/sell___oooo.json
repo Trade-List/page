@@ -5,6 +5,54 @@
   "admins": [],
   "items": [
     {
+      "id": "mwtcu0oxl20fy",
+      "type": "want",
+      "image": "images/sell___oooo/mwtcv3oqvrhdf.jpg",
+      "name": "ゲーム購入特典 ドッグタグ",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジョナス"
+      ],
+      "kind": "その他",
+      "priority": "★★☆",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwtcs5qo0zlyn",
+      "type": "want",
+      "image": "images/sell___oooo/mwtcv48y9n9x6.jpg",
+      "name": "ファミ通特典アクリルキーホルダー",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "ジョナス"
+      ],
+      "kind": "アクリルキーホルダー",
+      "priority": "★★☆",
+      "price": "",
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "",
+      "note": "",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwtbhcojzbfot",
       "type": "give",
       "image": "images/sell___oooo/mwtbhyu6ygykw.jpg",
