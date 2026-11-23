@@ -5,6 +5,56 @@
   "admins": [],
   "items": [
     {
+      "id": "mwt9xlppjviwo",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9yrdajiw0a.jpg",
+      "name": "ラウンドワン ブラインドフォトカード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "コメット",
+        "シピ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-10-10",
+      "note": "ROUND1",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
+      "id": "mwt9x971zb1o0",
+      "type": "give",
+      "image": "images/sell___oooo/mwt9yrub757iw.jpg",
+      "name": "ラウンドワン ブラインドフォトカード",
+      "works": [
+        "グノーシア"
+      ],
+      "chars": [
+        "沙明",
+        "オトメ"
+      ],
+      "kind": "カード",
+      "priority": "",
+      "price": 500,
+      "qty": 1,
+      "method": "both",
+      "status": "open",
+      "wish": "",
+      "release": "2025-10-10",
+      "note": "ROUND1",
+      "hidden": false,
+      "created": "2026-11-23",
+      "updated": "2026-11-23"
+    },
+    {
       "id": "mwt9prib60dt6",
       "type": "give",
       "image": "images/sell___oooo/mwt9ste67r6og.jpg",
