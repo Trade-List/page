@@ -284,13 +284,13 @@
       "price": "",
       "qty": 2,
       "method": "both",
-      "status": "open",
+      "status": "done",
       "wish": "",
       "release": "2026-11-06",
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-25"
     },
     {
       "id": "mwtb2kw8nba9n",
@@ -332,13 +332,13 @@
       "price": 500,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "done",
       "wish": "",
       "release": "2026-11-06",
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-25"
     },
     {
       "id": "mwtb0vu5zpnp9",
@@ -356,13 +356,13 @@
       "price": 500,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "done",
       "wish": "",
       "release": "2026-11-06",
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-25"
     },
     {
       "id": "mwtaotymendzx",
@@ -641,16 +641,16 @@
       ],
       "kind": "カード",
       "priority": "",
-      "price": 700,
+      "price": "",
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "done",
       "wish": "",
       "release": "2026-02-11",
       "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-25"
     },
     {
       "id": "mwta3cpj21oif",
@@ -741,13 +741,13 @@
       "price": 500,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "done",
       "wish": "",
       "release": "2025-10-10",
       "note": "ROUND1",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-25"
     },
     {
       "id": "mwt9x971zb1o0",
@@ -766,13 +766,13 @@
       "price": 500,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "done",
       "wish": "",
       "release": "2025-10-10",
       "note": "ROUND1",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-25"
     },
     {
       "id": "mwt9prib60dt6",
@@ -4330,5 +4330,5 @@
       "updated": "2026-11-23"
     }
   ],
-  "updated": "2026-11-23"
+  "updated": "2026-11-25"
 }
