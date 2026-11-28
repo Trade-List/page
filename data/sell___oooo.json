@@ -92,13 +92,13 @@
       "price": 500,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "trading",
       "wish": "",
       "release": "2026-11-05",
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwtbg50zao0x3",
@@ -164,13 +164,13 @@
       "price": "",
       "qty": 2,
       "method": "both",
-      "status": "open",
+      "status": "trading",
       "wish": "",
       "release": "2026-11-05",
       "note": "交換対応予定です",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwtbd8yo95q55",
@@ -282,7 +282,7 @@
       "kind": "カード",
       "priority": "",
       "price": "",
-      "qty": 2,
+      "qty": 1,
       "method": "both",
       "status": "done",
       "wish": "",
@@ -290,7 +290,7 @@
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-25"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwtb2kw8nba9n",
@@ -330,7 +330,7 @@
       "kind": "コースター",
       "priority": "",
       "price": 500,
-      "qty": 1,
+      "qty": 0,
       "method": "both",
       "status": "done",
       "wish": "",
@@ -338,7 +338,7 @@
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-25"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwtb0vu5zpnp9",
@@ -354,7 +354,7 @@
       "kind": "コースター",
       "priority": "",
       "price": 500,
-      "qty": 1,
+      "qty": 0,
       "method": "both",
       "status": "done",
       "wish": "",
@@ -362,7 +362,7 @@
       "note": "",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-25"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwtaotymendzx",
@@ -642,7 +642,7 @@
       "kind": "カード",
       "priority": "",
       "price": "",
-      "qty": 1,
+      "qty": 0,
       "method": "both",
       "status": "done",
       "wish": "",
@@ -650,7 +650,7 @@
       "note": "新宿・歌舞伎町タワー\n「THE TOKYO MATRIX：ダンジョン∞スパイラル」",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-25"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwta3cpj21oif",
@@ -739,7 +739,7 @@
       "kind": "カード",
       "priority": "",
       "price": 500,
-      "qty": 1,
+      "qty": 0,
       "method": "both",
       "status": "done",
       "wish": "",
@@ -747,7 +747,7 @@
       "note": "ROUND1",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-25"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwt9x971zb1o0",
@@ -764,7 +764,7 @@
       "kind": "カード",
       "priority": "",
       "price": 500,
-      "qty": 1,
+      "qty": 0,
       "method": "both",
       "status": "done",
       "wish": "",
@@ -772,7 +772,7 @@
       "note": "ROUND1",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-25"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwt9prib60dt6",
@@ -1126,13 +1126,13 @@
       "price": 500,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "trading",
       "wish": "",
       "release": "2025-12-19",
       "note": "フード・デザート特典",
       "hidden": false,
       "created": "2026-11-23",
-      "updated": "2026-11-23"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwstysfgi3zr2",
@@ -2828,13 +2828,13 @@
       "price": 550,
       "qty": 1,
       "method": "both",
-      "status": "open",
+      "status": "trading",
       "wish": "",
       "release": "2026-11-06",
       "note": "",
       "hidden": false,
       "created": "2026-11-15",
-      "updated": "2026-11-23"
+      "updated": "2026-11-28"
     },
     {
       "id": "mwhibd81",
@@ -4330,5 +4330,5 @@
       "updated": "2026-11-23"
     }
   ],
-  "updated": "2026-11-25"
+  "updated": "2026-11-28"
 }
